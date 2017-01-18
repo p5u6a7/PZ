@@ -24,15 +24,10 @@
 <Showtime>:
     carousel: carousel
     Carousel:
+		on_current_slide: root.goToScreen()
 		name: 'carousel'
         id: carousel
         loop: True
-        BoxLayout:
-            padding: 100
-            spacing: 100
-            Button:
-                text: 'Tap me or Swipe (1)'
-                on_release: carousel.load_next()
-        Screen1:
+        GroupScreen:
         Screen2:
 		ScreenSettings:

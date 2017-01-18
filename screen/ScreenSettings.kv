@@ -1,20 +1,27 @@
 <ScreenSettings>:
 	name: 'screenSettings'
-	BoxLayout:
-		orientation: 'vertical'
-		Button:
-			text: 'Wyświetlacz'
-			on_release: root.parent.parent.parent.showScreenSettingsDisplay()
-		Button:
-			text: 'Alerty'
-			on_release: root.parent.parent.parent.showScreenSettingsAlerts()
-		Button:
-			text: 'Społeczność'
-			on_release: root.parent.parent.parent.showScreenSettingsSocial()
-		Button:
-			text: 'SMS'
-			on_release: root.parent.parent.parent.showScreenSettingsSMS()
-	#ScreenMusic:
+	carousel: carousel
+	Carousel:
+		name: 'carousel'
+        id: carousel
+        loop: False
+		direction: 'top'
+		ScreenContacts:
+		BoxLayout:
+			orientation: 'vertical'
+			Button:
+				text: 'Wyświetlacz'
+				on_release: root.parent.parent.parent.showScreenSettingsDisplay()
+			Button:
+				text: 'Alerty'
+				on_release: root.parent.parent.parent.showScreenSettingsAlerts()
+			Button:
+				text: 'Społeczność'
+				on_release: root.parent.parent.parent.showScreenSettingsSocial()
+			Button:
+				text: 'SMS'
+				on_release: root.parent.parent.parent.showScreenSettingsSMS()
+		ScreenMusic:
 			
 <ScreenSettingsDisplay>:
 	name: 'screenSettingsDisplay'
@@ -81,3 +88,11 @@
 		spacing: 100
 		Button:
 			text: 'MUSIC'
+	
+<ScreenContacts>:
+	name: 'screenContacts'
+	BoxLayout:
+		padding: 100
+		spacing: 100
+		Button:
+			text: 'CONTACTS'
