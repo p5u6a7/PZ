@@ -1,0 +1,38 @@
+<Screen1>:
+    name: "screen1"
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 50
+        spacing: 50
+        Button:
+            text: "Next (2)"
+            on_release: self.parent.parent.parent.parent.parent.ids.carousel.load_next()
+        Button:
+            text: "Go back (2)"
+            on_release: self.parent.parent.parent.parent.parent.ids.carousel.load_previous()
+
+<Screen2>:
+    name: "screen2"
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 100
+        spacing: 100
+        Button:
+            text: "go back (3)"
+            on_release: self.parent.parent.parent.parent.parent.ids.carousel.load_previous()
+
+<Showtime>:
+    carousel: carousel
+    Carousel:
+		name: 'carousel'
+        id: carousel
+        loop: True
+        BoxLayout:
+            padding: 100
+            spacing: 100
+            Button:
+                text: 'Tap me or Swipe (1)'
+                on_release: carousel.load_next()
+        Screen1:
+        Screen2:
+		ScreenSettings:
