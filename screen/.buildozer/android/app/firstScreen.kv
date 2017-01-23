@@ -1,0 +1,20 @@
+<FirstScreen>:
+    name: 'first'
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: 'first screen!'
+            font_size: 30
+        Image:
+            source: 'colours.png'
+            allow_stretch: True
+            keep_ratio: False
+        BoxLayout:
+            Button:
+                text: 'goto second screen'
+                font_size: 30
+                on_release: app.root.current = 'second'
+            Button:
+                text: 'get random colour screen'
+                font_size: 30
+                on_release: app.root.new_colour_screen()
