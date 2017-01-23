@@ -1,0 +1,37 @@
+<GroupScreen>:
+    id: groupScreen
+    name: 'groupScreen'
+    MapView:
+        id: mapView
+        lat: 45
+        lon: 11
+        zoom: 18
+        MapMarker:
+            id: marker
+    BoxLayout:
+        orientation: 'horizontal'
+        Button:
+            size_hint_y: 0.1
+            size_hint_x: 0.5
+            opacity: 0.5
+            halign: 'left'
+            text: ''
+            text_size: img_alert.size
+            Image:
+                id: img_alert
+                center_x: self.parent.center_x
+                name: 'alert'
+                source: 'resources/alert.png'
+                height: self.parent.height
+        Button:
+            size_hint_y: 0.1
+            size_hint_x: 0.5
+            opacity: 0.5
+            halign: 'right'
+            text: ''
+            text_size: img_punkt_zbiorki.size
+            Image:
+                id: img_punkt_zbiorki
+                center_x: self.parent.center_x
+                source: 'resources/punkt_zbiorki.png'
+                height: self.parent.height
