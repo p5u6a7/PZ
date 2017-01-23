@@ -60,7 +60,8 @@ class Screen2(Screen):
 
 
 class ScreenSettings(Screen):
-    pass
+    def show(self):
+        MainApp.get_running_app().root.carousel.slides[0].ids["mapView"].center_on(float(45), float(5))
 
 
 class ScreenSettingsDisplay(Screen):
