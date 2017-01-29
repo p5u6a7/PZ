@@ -111,8 +111,8 @@ class LineMapLayer(MapLayer):
         self.zoom = mapview.zoom
 
         '''Na ten moment ustawiamy stale wspolrzedne'''
-        geo_dom   = [52.9828, 18.5729]
-        geo_wydzial = [53.0102, 18.5946]
+        geo_dom   = [52.982800, 18.572900]
+        geo_wydzial = [53.010200, 18.594600]
         screen_dom  = mapview.get_window_xy_from(geo_dom[0], geo_dom[1], mapview.zoom)
         screen_wydzial = mapview.get_window_xy_from(geo_wydzial[0], geo_wydzial[1], mapview.zoom)
 
@@ -124,7 +124,7 @@ class LineMapLayer(MapLayer):
         with self.canvas:
             self.canvas.clear()
             Scale(1/s,1/s,1)
-            Translate(-x,-y)
+            Translate(-x, -y)
             Color(0, 0, 255, .6)
             Line(points=point_list, width=3, joint="bevel")
 
@@ -136,6 +136,7 @@ class MainApp(App):
     lon = 0
     Builder.load_file("screensettings.kv")
     Builder.load_file("groupscreen.kv")
+    znacznik=0
 
     def build(self):
         try:
@@ -151,7 +152,7 @@ class MainApp(App):
     def stop(self):
         gps.stop()
 
-    @mainthread
+    '''@mainthread'''
     def on_location(self, **kwargs):
         self.gps_location = '\n'.join([
             '{}={}'.format(k, v) for k, v in kwargs.items()])
@@ -163,15 +164,18 @@ class MainApp(App):
                     MainApp.lon = float(v)
 
         '''W karuzeli dodajemy layer wraz z nasza utworzona klasa LineMapLayer'''
+        if MainApp.znacznik>0:
+            MainApp.get_running_app().root.carousel.slides[0].ids["mapView"].remove_layer(LineMapLayer())
+        MainApp.znacznik=1
         MainApp.get_running_app().root.carousel.slides[0].ids["mapView"].add_layer(LineMapLayer(), mode="scatter")
-        MainApp.get_running_app().root.carousel.slides[0].ids["marker"].lat = float(MainApp.lat)
+        '''MainApp.get_running_app().root.carousel.slides[0].ids["marker"].lat = float(MainApp.lat)
         MainApp.get_running_app().root.carousel.slides[0].ids["marker"].lon = float(MainApp.lon)
         MainApp.get_running_app().root.carousel.slides[0].ids["marker2"].lat = 53.0102
-        MainApp.get_running_app().root.carousel.slides[0].ids["marker2"].lon = 18.5946
+        MainApp.get_running_app().root.carousel.slides[0].ids["marker2"].lon = 18.5946'''
         MainApp.get_running_app().root.carousel.slides[0].ids["mapView"].center_on(float(MainApp.lat), (MainApp.lon))
 
 
-    @mainthread
+    '''@mainthread'''
     def on_status(self, stype, status):
         self.gps_status = 'type={}\n{}'.format(stype, status)
 
@@ -180,7 +184,7 @@ class MainApp(App):
         return True
 
     def on_resume(self):
-        '''gps.start(1000, 0)'''
+        gps.start(1000, 0)
 
 
 pass
