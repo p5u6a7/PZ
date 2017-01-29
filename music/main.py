@@ -1,4 +1,5 @@
 # coding=utf-8
+import kivy
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.popup import Popup
@@ -11,8 +12,9 @@ from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.boxlayout import BoxLayout
 from kivy.lang import Builder
 from kivy.uix.screenmanager import Screen, ScreenManager
-
+from functools import partial
 from os import listdir, path
+from kivy.clock import Clock
 
 
 class ChooseFile(FloatLayout):
@@ -24,66 +26,56 @@ class MusicPlayer(Screen):
     directory = ''  # lokacja folderu z piosenkami
     nowPlaying = ''  # Aktualnie wybrana piosenka
     songs = []  # Lista utworów
+    flaga = 1
 
+    #funkcja wywoływana na przycisku stop/play
     def stopSong(self):
+        self.flaga = 88
         if self.nowPlaying == '':
             title = self.songs[0]
             self.nowPlaying = SoundLoader.load(self.directory + str(title))
             self.ids.nowplay.text = self.songs[0]
         if self.nowPlaying.state == 'stop':
+            self.flaga = 5
+            self.nowPlaying.play()
+            if self.flaga == 5:
+                self.flaga = 6
+                if self.flaga == 6:
+                    self.nowPlaying.bind(on_stop=self.stop_event_flaga)
+        else:
+            self.flaga = 99
+            self.nowPlaying.stop()
+
+    # funkcja wywoływana na przycisku Następny utwór
+    def nextSong(self):
+        self.flaga = 1
+        if self.nowPlaying == '':
+            title = self.songs[0]
+            self.nowPlaying = SoundLoader.load(self.directory + str(title))
+            self.ids.nowplay.text = self.songs[0]
             self.nowPlaying.play()
         else:
             self.nowPlaying.stop()
+        print("nextkSong")
+        if self.flaga == 1:
+            self.nowPlaying.bind(on_stop=self.stop_event_flaga)
 
-    def nextSong(self):
-        if self.nowPlaying == '':
-            title = self.songs[0]
-            self.nowPlaying = SoundLoader.load(self.directory + str(title))
-            self.ids.nowplay.text = self.songs[0]
-        a = 0
-        b = int(a)
-
-        next2 = 0
-        self.nowPlaying.stop()
-        for song in self.songs:
-            self.nowPlaying = SoundLoader.load(self.directory + self.ids.nowplay.text + '.mp3')
-            self.nowPlaying.stop()
-
-            if self.songs[b] == self.ids.nowplay.text:
-                next1 = b + 1
-                next2 = int(next1)
-            b += 1
-
-        title = self.songs[next2]
-        self.nowPlaying = SoundLoader.load(self.directory + str(title))
-        self.nowPlaying.play()
-        self.ids.nowplay.text = self.songs[next2]
-
+    # funkcja wywoływana na przycisku Poprzedni utwór
     def backSong(self):
+        self.flaga = 0
+        dl = len(self.songs) - 1
         if self.nowPlaying == '':
-            title = self.songs[0]
+            title = self.songs[dl]
             self.nowPlaying = SoundLoader.load(self.directory + str(title))
-            self.ids.nowplay.text = self.songs[0]
-        a = 0
-        b = int(a)
-        next = 0
-        next2 = 0
-        self.nowPlaying.stop()
-        for song in self.songs:
-            self.nowPlaying = SoundLoader.load(self.directory + self.ids.nowplay.text + '.mp3')
-
+            self.ids.nowplay.text = self.songs[dl]
+            self.nowPlaying.play()
+        else:
             self.nowPlaying.stop()
+        print("backSong")
+        if self.flaga == 0:
+            self.nowPlaying.bind(on_stop=self.stop_event_flaga)
 
-            if self.songs[b] == self.ids.nowplay.text:
-                next = b - 1
-                next2 = int(next)
-            b = b + 1
-
-        title = self.songs[next2]
-        self.nowPlaying = SoundLoader.load(self.directory + str(title))
-        self.nowPlaying.play()
-        self.ids.nowplay.text = self.songs[next2]
-
+    #odczytanie ścieżki folderu z pliku
     def getpath(self):
         try:
             f = open("sav.dat", "r")
@@ -94,6 +86,7 @@ class MusicPlayer(Screen):
         except:
             self.ids.direct.text = ''
 
+    #zapisanie ścieżki folderu do pliku
     def savepath(self, path):
         f = open("sav.dat", "w")
         f.write(path)
@@ -127,6 +120,7 @@ class MusicPlayer(Screen):
         # return music
         # self.getSongs()
 
+    #główna funkcja służąca do otwarzania muzyki i tworzenia listy utworów
     def getSongs(self):
 
         self.directory = self.ids.direct.text  # przypisanie katalogu z etykiety
@@ -162,41 +156,115 @@ class MusicPlayer(Screen):
 
             self.songs.sort()
 
-            for song in self.songs:
 
-                def playSong(bt):
-                    try:
-                        self.nowPlaying.stop()
-                    except:
-                        pass
-                    finally:
-                        self.nowPlaying = SoundLoader.load(self.directory + bt.text + '.mp3')
-                        # .length pobiera dla cześci plików błędą wartości -1
-                        #print("%f\n" % self.nowPlaying.length)
-                        self.nowPlaying.play()
-                        self.ids.nowplay.text = bt.text + '.mp3'
+        #funkcja uruchamiana w momencie kliknięcia utworu na liście
+        def playSong(bt):
+            self.flaga = 3
+            try:
+                self.nowPlaying.stop()
+            except:
+                pass
+            finally:
+                self.nowPlaying = SoundLoader.load(self.directory + bt.text + '.mp3')
+                self.nowPlaying.play()
+                self.ids.nowplay.text = bt.text + '.mp3'
+                if self.flaga == 3:
+                    self.flaga = 4
+                    if self.flaga == 4:
+                        self.nowPlaying.bind(on_stop=self.stop_event_flaga)
 
-                btn = Button(text=song[:-4], on_press=playSong)
-                icon = Button(size_hint_x=None, size_hint_y=None, background_down="ico.png", background_normal="ico.png")
+        #tworzenie listy utworów
+        for song in self.songs:
 
-                # Color Buttons Alternatively
-                if self.songs.index(song) % 2 == 0:
-                    btn.background_color = (.1, .1, .1, 1)
-                else:
-                    btn.background_color = (.2, .2, .2, 1)
+            btn = Button(text=song[:-4], on_press=playSong)
+            icon = Button(size_hint_x=None, size_hint_y=None, background_down="ico.png", background_normal="ico.png")
 
-                #dodanie elementów etykiet utworów
-                self.ids.scroll.add_widget(icon)
-                self.ids.scroll.add_widget(btn)
+            # kolorowanie elementów listy
+            if self.songs.index(song) % 2 == 0:
+                btn.background_color = (.1, .1, .1, 1)
+            else:
+                btn.background_color = (.2, .2, .2, 1)
 
+            #dodanie elementów etykiet utworów
+            self.ids.scroll.add_widget(icon)
+            self.ids.scroll.add_widget(btn)
 
+    #funkcja wywoływana w momencie gdy obecnie odtwarzany utwór się skończy
+    def stop_event_flaga(self, song):
+        if self.flaga == 1:
+            Clock.schedule_once(partial(self.nextSong2, self.nowPlaying))
+        if self.flaga == 0:
+            Clock.schedule_once(partial(self.backSong2, self.nowPlaying))
+        if self.flaga == 4:
+            Clock.schedule_once(partial(self.nextSong2, self.nowPlaying))
+        if self.flaga == 6:
+            Clock.schedule_once(partial(self.nextSong2, self.nowPlaying))
 
+    #funkcja która odtwarza kolejny utwór z listy
+    def nextSong2(self, songfile, dt):
+        self.flaga = 1
+        dl = len(self.songs)
+        a = 0
+        b = int(a)
+        next2 = 0
+        for song in self.songs:
 
+            if self.songs[b] == self.ids.nowplay.text:
+                next1 = b + 1
+                next2 = int(next1)
+                if next2 >= dl:
+                    next2 = 0
+                b = 0
+            else:
+                b += 1
+
+        if self.nowPlaying.state == 'stop':
+            pass
+        else:
+            self.nowPlaying.stop()
+        title = self.songs[next2]
+        self.nowPlaying = SoundLoader.load(self.directory + str(title))
+        self.nowPlaying.play()
+        self.ids.nowplay.text = self.songs[next2]
+        print("nextSong2")
+        if self.flaga == 1:
+            self.nowPlaying.bind(on_stop=self.stop_event_flaga)
+
+    # funkcja która odtwarza poprzedni utwór z listy
+    def backSong2(self, songfile, dt):
+        self.flaga = 1
+        a = 0
+        b = int(a)
+        next2 = 0
+        for song in self.songs:
+
+            if self.songs[b] == self.ids.nowplay.text:
+                next1 = b - 1
+                next2 = int(next1)
+                b = 0
+            else:
+                b += 1
+
+        if self.nowPlaying.state == 'stop':
+            pass
+        else:
+            self.nowPlaying.stop()
+        title = self.songs[next2]
+        self.nowPlaying = SoundLoader.load(self.directory + str(title))
+        self.nowPlaying.play()
+        self.ids.nowplay.text = self.songs[next2]
+        print("backSong2")
+        if self.flaga == 1:
+            self.nowPlaying.bind(on_stop=self.stop_event_flaga)
+
+#główna klasa programu
 class KVMusicApp(App):
     def build(self):
-        Builder.load_file("MusicPlayer.kv")
+        Builder.load_file("musicplayer.kv")
         music = MusicPlayer()
         music.getpath()
+        print music.nowPlaying
+
         return music
 
     def on_pause(self):
