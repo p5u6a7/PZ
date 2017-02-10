@@ -1,6 +1,6 @@
 from kivy.app import App
 from kivy.uix.screenmanager import Screen, ScreenManager
-from plyer import gps
+from plyer import *
 from kivy.properties import StringProperty
 from kivy.clock import Clock, mainthread
 from kivy.uix.boxlayout import BoxLayout
@@ -13,8 +13,13 @@ from kivy.clock import Clock
 from kivy.uix.floatlayout import FloatLayout
 from kivy.graphics import Color, Line
 from kivy.graphics.context_instructions import Translate, Scale
-
 from kivy.lang import Builder
+from route import Router
+from loadOsm import LoadOsm
+
+
+
+
 
 
 class ShowTime(Screen):
@@ -99,6 +104,22 @@ class LineMapLayer(MapLayer):
         super(LineMapLayer, self).__init__(**kwargs)
         self.zoom = 0
 
+    '''Funkcja odpowiadajaca za stworzenie wierzcholkow grafu, ktory jest nasza droga'''
+    def routeToGpx(self, lat1, lon1, lat2, lon2):
+        data = LoadOsm('cycle')
+        node1 = data.findNode(lat1, lon1)
+        node2 = data.findNode(lat2, lon2)
+
+        router = Router(data)
+        result, route = router.doRoute(node1, node2)
+        self.count = 0
+        self.node=[]
+
+        for i in route:
+            self.node.append(data.rnodes[i])
+            self.count=self.count+1
+
+
     '''W momencie przemieszczenia mapy przerysowujemy linie'''
     def reposition(self):
         mapview = self.parent
@@ -106,21 +127,24 @@ class LineMapLayer(MapLayer):
             self.draw_line()
 
     '''Funkcja rysowania linii'''
-    def draw_line(self, *args):
+    def draw_line(self):
         mapview = self.parent
         self.zoom = mapview.zoom
 
         '''Na ten moment ustawiamy stale wspolrzedne'''
-        geo_dom   = [52.982800, 18.572900]
-        geo_wydzial = [53.010200, 18.594600]
-        screen_dom  = mapview.get_window_xy_from(geo_dom[0], geo_dom[1], mapview.zoom)
-        screen_wydzial = mapview.get_window_xy_from(geo_wydzial[0], geo_wydzial[1], mapview.zoom)
+        geo_dom   = [52.9828, 18.5729]
+        geo_wydzial = [53.0102, 18.5946]
+
+        point_list=[]
+        '''Wywolujemy funkcje ktora zwraca nam wspolrzedne trasy o danych wspolzednych poczatkowych i koncowych (Gdzie to przeniesc???)'''
+        self.routeToGpx(float(geo_dom[0]), float(geo_dom[1]), float(geo_wydzial[0]), float(geo_wydzial[1]))
+
+        for j in xrange(len(self.node)-1):
+            point_list.extend(mapview.get_window_xy_from(float(self.node[j][0]), float(self.node[j][1]), mapview.zoom))
 
         scatter = mapview._scatter
         x,y,s = scatter.x, scatter.y, scatter.scale
-        point_list    = [ screen_dom[0], screen_dom[1],screen_wydzial[0], screen_wydzial[1] ]
 
-        '''Skalowanie linii i jej rysowanie, czy to tutaj jest blad?'''
         with self.canvas:
             self.canvas.clear()
             Scale(1/s,1/s,1)

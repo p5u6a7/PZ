@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.8 (27540 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="52.9949503" minlon="17.9956055" maxlat="53.0015623" maxlon="18.0065918"/>
+ <node id="589700513" visible="true" version="3" changeset="12273828" timestamp="2012-07-18T00:41:24Z" user="Redaction Account Bugfix" uid="740427" lat="52.9924500" lon="17.9971900"/>
+ <node id="589700528" visible="true" version="3" changeset="12273828" timestamp="2012-07-18T00:41:24Z" user="Redaction Account Bugfix" uid="740427" lat="52.9938400" lon="17.9960100"/>
+ <node id="589700531" visible="true" version="3" changeset="12273828" timestamp="2012-07-18T00:41:24Z" user="Redaction Account Bugfix" uid="740427" lat="52.9932800" lon="17.9980500"/>
+ <node id="589707695" visible="true" version="4" changeset="18574782" timestamp="2013-10-27T21:15:27Z" user="k2extreme" uid="1563832" lat="52.9989145" lon="17.9928982"/>
+ <node id="589708058" visible="true" version="4" changeset="14111924" timestamp="2012-12-01T14:21:43Z" user="WoGraSo" uid="513431" lat="52.9999176" lon="17.9986377"/>
+ <node id="589708044" visible="true" version="2" changeset="14111924" timestamp="2012-12-01T14:21:43Z" user="WoGraSo" uid="513431" lat="53.0001326" lon="18.0000147"/>
+ <node id="589708042" visible="true" version="3" changeset="12273865" timestamp="2012-07-18T00:56:03Z" user="Redaction Account Bugfix" uid="740427" lat="52.9980900" lon="18.0017400"/>
+ <node id="1112340183" visible="true" version="1" changeset="7035441" timestamp="2011-01-20T22:27:55Z" user="Spongilla" uid="25729" lat="53.0039413" lon="18.0251106"/>
+ <node id="1719027819" visible="true" version="1" changeset="11318589" timestamp="2012-04-16T07:04:33Z" user="archie-pl" uid="656227" lat="53.0044639" lon="17.9948408"/>
+ <node id="589700542" visible="true" version="3" changeset="12273865" timestamp="2012-07-18T00:59:28Z" user="Redaction Account Bugfix" uid="740427" lat="52.9960700" lon="18.0002000"/>
+ <node id="589700538" visible="true" version="3" changeset="12273865" timestamp="2012-07-18T00:59:28Z" user="Redaction Account Bugfix" uid="740427" lat="52.9967000" lon="18.0006700"/>
+ <node id="589700540" visible="true" version="3" changeset="12273865" timestamp="2012-07-18T00:59:28Z" user="Redaction Account Bugfix" uid="740427" lat="52.9964100" lon="18.0004100"/>
+ <node id="589700524" visible="true" version="3" changeset="12273828" timestamp="2012-07-18T00:41:24Z" user="Redaction Account Bugfix" uid="740427" lat="52.9947200" lon="17.9985700"/>
+ <node id="589700526" visible="true" version="3" changeset="12273828" timestamp="2012-07-18T00:41:24Z" user="Redaction Account Bugfix" uid="740427" lat="52.9939900" lon="17.9979700"/>
+ <node id="589700532" visible="true" version="3" changeset="12273828" timestamp="2012-07-18T00:41:24Z" user="Redaction Account Bugfix" uid="740427" lat="52.9938400" lon="17.9989100"/>
+ <node id="589700535" visible="true" version="3" changeset="12273828" timestamp="2012-07-18T00:41:24Z" user="Redaction Account Bugfix" uid="740427" lat="52.9953800" lon="17.9994900"/>
+ <node id="589700536" visible="true" version="3" changeset="12273828" timestamp="2012-07-18T00:41:24Z" user="Redaction Account Bugfix" uid="740427" lat="52.9959400" lon="17.9999800"/>
+ <node id="2043834981" visible="true" version="2" changeset="21198830" timestamp="2014-03-19T20:02:28Z" user="archie-pl" uid="656227" lat="53.0016587" lon="18.0093115"/>
+ <node id="2043834899" visible="true" version="1" changeset="14111924" timestamp="2012-12-01T14:21:39Z" user="WoGraSo" uid="513431" lat="53.0031055" lon="18.0173954"/>
+ <node id="2043834905" visible="true" version="1" changeset="14111924" timestamp="2012-12-01T14:21:39Z" user="WoGraSo" uid="513431" lat="53.0025745" lon="18.0142057"/>
+ <node id="2043834917" visible="true" version="1" changeset="14111924" timestamp="2012-12-01T14:21:40Z" user="WoGraSo" uid="513431" lat="53.0021435" lon="18.0221054"/>
+ <node id="2043834921" visible="true" version="1" changeset="14111924" timestamp="2012-12-01T14:21:40Z" user="WoGraSo" uid="513431" lat="53.0024131" lon="18.0139697"/>
+ <node id="2043834926" visible="true" version="1" changeset="14111924" timestamp="2012-12-01T14:21:40Z" user="WoGraSo" uid="513431" lat="53.0022646" lon="18.0127788"/>
+ <node id="2043834956" visible="true" version="1" changeset="14111924" timestamp="2012-12-01T14:21:40Z" user="WoGraSo" uid="513431" lat="53.0027117" lon="18.0200132"/>
+ <node id="2043834969" visible="true" version="1" changeset="14111924" timestamp="2012-12-01T14:21:41Z" user="WoGraSo" uid="513431" lat="53.0035058" lon="18.0147239"/>
+ <node id="2043834974" visible="true" version="1" changeset="14111924" timestamp="2012-12-01T14:21:41Z" user="WoGraSo" uid="513431" lat="53.0015156" lon="18.0086160"/>
+ <node id="2043834977" visible="true" version="1" changeset="14111924" timestamp="2012-12-01T14:21:41Z" user="WoGraSo" uid="513431" lat="53.0023953" lon="18.0215046"/>
+ <node id="2043834984" visible="true" version="1" changeset="14111924" timestamp="2012-12-01T14:21:41Z" user="WoGraSo" uid="513431" lat="53.0030200" lon="18.0144525"/>
+ <node id="2043834993" visible="true" version="1" changeset="14111924" timestamp="2012-12-01T14:21:41Z" user="WoGraSo" uid="513431" lat="53.0021032" lon="18.0117917"/>
+ <node id="2043835022" visible="true" version="1" changeset="14111924" timestamp="2012-12-01T14:21:42Z" user="WoGraSo" uid="513431" lat="53.0009539" lon="18.0052150"/>
+ <node id="2044081898" visible="true" version="1" changeset="14111924" timestamp="2012-12-01T15:59:37Z" user="WoGraSo" uid="513431" lat="53.0029247" lon="18.0233392"/>
+ <node id="2510823910" visible="true" version="1" changeset="18574782" timestamp="2013-10-27T21:15:13Z" user="k2extreme" uid="1563832" lat="52.9986806" lon="17.9914734"/>
+ <node id="2510823911" visible="true" version="1" changeset="18574782" timestamp="2013-10-27T21:15:13Z" user="k2extreme" uid="1563832" lat="52.9986925" lon="17.9912974"/>
+ <node id="2727517726" visible="true" version="1" changeset="21198830" timestamp="2014-03-19T20:02:26Z" user="archie-pl" uid="656227" lat="53.0016050" lon="18.0042695"/>
+ <node id="2727517729" visible="true" version="1" changeset="21198830" timestamp="2014-03-19T20:02:26Z" user="archie-pl" uid="656227" lat="53.0027671" lon="18.0041837"/>
+ <node id="2727517732" visible="true" version="1" changeset="21198830" timestamp="2014-03-19T20:02:26Z" user="archie-pl" uid="656227" lat="53.0036968" lon="18.0035614"/>
+ <node id="2727517734" visible="true" version="1" changeset="21198830" timestamp="2014-03-19T20:02:26Z" user="archie-pl" uid="656227" lat="53.0082029" lon="17.9955052"/>
+ <node id="2727517737" visible="true" version="1" changeset="21198830" timestamp="2014-03-19T20:02:26Z" user="archie-pl" uid="656227" lat="53.0046300" lon="18.0018931"/>
+ <node id="2727517793" visible="true" version="1" changeset="21198830" timestamp="2014-03-19T20:02:26Z" user="archie-pl" uid="656227" lat="53.0046288" lon="17.9963641"/>
+ <node id="2727517796" visible="true" version="1" changeset="21198830" timestamp="2014-03-19T20:02:26Z" user="archie-pl" uid="656227" lat="52.9961940" lon="18.0002766"/>
+ <node id="589708048" visible="true" version="2" changeset="21198830" timestamp="2014-03-19T20:02:27Z" user="archie-pl" uid="656227" lat="53.0007140" lon="18.0036902"/>
+ <node id="589700547" visible="true" version="4" changeset="21198830" timestamp="2014-03-19T20:02:28Z" user="archie-pl" uid="656227" lat="52.9931407" lon="18.0016413"/>
+ <node id="2727530865" visible="true" version="1" changeset="21198922" timestamp="2014-03-19T20:07:44Z" user="archie-pl" uid="656227" lat="52.9999908" lon="18.0000383">
+  <tag k="historic" v="monument"/>
+  <tag k="name" v="Przecięcie 18 południka i 53 równoleżnika"/>
+ </node>
+ <way id="46231951" visible="true" version="3" changeset="12274066" timestamp="2012-07-18T08:47:21Z" user="Redaction Account Bugfix" uid="740427">
+  <nd ref="589700513"/>
+  <nd ref="589700531"/>
+  <nd ref="589700532"/>
+  <nd ref="589700535"/>
+  <tag k="highway" v="track"/>
+  <tag k="source" v="http://ump.waw.pl/ retrieved 11:19:07 11/17/09 (UMP-Torun/src/inne.drogi.txt)"/>
+ </way>
+ <way id="46231952" visible="true" version="3" changeset="12274066" timestamp="2012-07-18T02:21:10Z" user="Redaction Account Bugfix" uid="740427">
+  <nd ref="589700528"/>
+  <nd ref="589700526"/>
+  <nd ref="589700524"/>
+  <nd ref="589700535"/>
+  <nd ref="589700536"/>
+  <tag k="highway" v="track"/>
+  <tag k="source" v="http://ump.waw.pl/ retrieved 11:19:07 11/17/09 (UMP-Torun/src/inne.drogi.txt)"/>
+ </way>
+ <way id="243709488" visible="true" version="2" changeset="21198830" timestamp="2014-03-19T20:02:29Z" user="archie-pl" uid="656227">
+  <nd ref="2510823911"/>
+  <nd ref="2510823910"/>
+  <nd ref="589707695"/>
+  <nd ref="589708058"/>
+  <nd ref="589708044"/>
+  <nd ref="589708048"/>
+  <nd ref="2043835022"/>
+  <nd ref="2043834974"/>
+  <nd ref="2043834981"/>
+  <nd ref="2043834993"/>
+  <nd ref="2043834926"/>
+  <nd ref="2043834921"/>
+  <nd ref="2043834905"/>
+  <nd ref="2043834984"/>
+  <nd ref="2043834969"/>
+  <nd ref="2043834899"/>
+  <nd ref="2043834956"/>
+  <nd ref="2043834977"/>
+  <nd ref="2043834917"/>
+  <nd ref="2044081898"/>
+  <nd ref="1112340183"/>
+  <tag k="highway" v="track"/>
+  <tag k="source" v="http://ump.waw.pl/ retrieved 11:19:07 11/17/09 (UMP-Torun/src/inne.drogi.txt)"/>
+ </way>
+ <way id="267282961" visible="true" version="1" changeset="21198830" timestamp="2014-03-19T20:02:27Z" user="archie-pl" uid="656227">
+  <nd ref="589708048"/>
+  <nd ref="2727517726"/>
+  <nd ref="2727517729"/>
+  <nd ref="2727517732"/>
+  <nd ref="2727517737"/>
+  <nd ref="2727517734"/>
+  <tag k="highway" v="track"/>
+  <tag k="tracktype" v="grade2"/>
+ </way>
+ <way id="46231684" visible="true" version="5" changeset="21198830" timestamp="2014-03-19T20:02:30Z" user="archie-pl" uid="656227">
+  <nd ref="589700536"/>
+  <nd ref="589700542"/>
+  <nd ref="2727517796"/>
+  <nd ref="589700540"/>
+  <nd ref="589700538"/>
+  <nd ref="589708042"/>
+  <nd ref="589708048"/>
+  <tag k="highway" v="track"/>
+  <tag k="source" v="http://ump.waw.pl/ retrieved 11:19:07 11/17/09 (UMP-Torun/src/inne.drogi.txt)"/>
+ </way>
+ <way id="267282968" visible="true" version="2" changeset="35221014" timestamp="2015-11-10T17:21:08Z" user="rowers2" uid="2445224">
+  <nd ref="1719027819"/>
+  <nd ref="2727517793"/>
+  <nd ref="589708058"/>
+  <nd ref="2727517796"/>
+  <nd ref="589700547"/>
+  <tag k="highway" v="track"/>
+  <tag k="tracktype" v="grade3"/>
+ </way>
+</osm>
