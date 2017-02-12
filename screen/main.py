@@ -1,18 +1,27 @@
+import math
+from kivy.animation import Animation
 from kivy.app import App
-from kivy.clock import mainthread
+from kivy.clock import Clock, mainthread
 from kivy.graphics import Color, Line
 from kivy.lang import Builder
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.carousel import Carousel
+from kivy.uix.image import Image
+from kivy.uix.scatter import Scatter
 from kivy.uix.screenmanager import Screen
 from kivy.uix.widget import Widget
+from math import atan2, degrees
 from math import radians
 
-from kivy.garden.mapview import MapLayer
+from kivy.garden.mapview import MapView, MapMarker, MapLayer
 from kivy.graphics.context_instructions import Translate, Scale
 from kivy.graphics.transformation import Matrix
+from kivy.properties import ListProperty
+from kivy.properties import NumericProperty
+from kivy.properties import ObjectProperty
 from kivy.properties import StringProperty
-from plyer import gps
-
 from loadOsm import LoadOsm
+from plyer import gps
 from route import Router
 
 
