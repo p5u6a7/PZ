@@ -1,17 +1,36 @@
 <GroupScreen>:
     id: groupScreen
     name: 'groupScreen'
-    MapView:
-        id: mapView
-        lat: 45
-        lon: 11
-        zoom: 14
-        MapMarker:
-            id: marker
-        MapMarker:
-            id: marker2
+    orientation: 'horizontal'
+    RelativeLayout:
+        Scatter:
+            height: root.height
+            width: root.width
+            id: scatter2
+            RelativeLayout:
+                height: 3*root.height
+                width: 3*root.width
+                pos: (-root.width, -root.height)
+                MapView:
+                    height: root.height
+                    width: root.width
+                    pos_hint: {'center_x':.5,'center_y':.5}
+                    id: mapView
+                    lat: 45
+                    lon: 11
+                    zoom: 18
+                    MapMarker:
+                        id: marker
+                        lat: 53.0102
+                        lon: 18.5946
+                    MapMarker:
+                        id: marker2
+                    LineMapLayer:
+                        id: line_map_layer
+                        node: []
     BoxLayout:
         orientation: 'horizontal'
+        valign: 'bottom'
         Button:
             size_hint_y: 0.1
             size_hint_x: 0.5
@@ -19,6 +38,7 @@
             halign: 'left'
             text: ''
             text_size: img_alert.size
+            on_release: root.rotate()
             Image:
                 id: img_alert
                 center_x: self.parent.center_x
@@ -31,9 +51,26 @@
             opacity: 0.5
             halign: 'right'
             text: ''
+            on_release: root.center()
             text_size: img_punkt_zbiorki.size
             Image:
                 id: img_punkt_zbiorki
                 center_x: self.parent.center_x
                 source: 'resources/punkt_zbiorki.png'
                 height: self.parent.height
+        Button:
+            size_hint_y: 0.1
+            size_hint_x: 0.5
+            opacity: 0.5
+            halign: 'right'
+            text: ''
+            on_release: root.ids["line_map_layer"].routeToGpx(52.9828, 18.5729, 53.0102, 18.5946)
+            text_size: img_temp.size
+            Image:
+                id: img_temp
+                center_x: self.parent.center_x
+                source: 'resources/telefon.png'
+                height: self.parent.height
+
+
+
