@@ -11,25 +11,16 @@
             text: "Go back (2)"
             on_release: self.parent.parent.parent.parent.parent.ids.carousel.load_previous()
 
-<Screen2>:
-    name: "screen2"
-    BoxLayout:
-        orientation: 'vertical'
-        padding: 100
-        spacing: 100
-        Button:
-            text: "go back (3)"
-            on_release: self.parent.parent.parent.parent.parent.ids.carousel.load_previous()
-
 <Showtime>:
     orientation: 'vertical'
     carousel: carousel
     name: 'showTime'
     Carousel:
         on_current_slide: root.goToScreen()
+        height: root.height
+        width: root.width
 		name: 'carousel'
         id: carousel
         loop: True
         GroupScreen:
-        Screen2:
 		ScreenSettings:

@@ -62,7 +62,7 @@ class Router(object):
 
     # Limit for how long it will search
     count = 0
-    while count < 1000000:
+    while count < 10000:
       count = count + 1
       try:
         nextItem = self.queue.pop(0)
