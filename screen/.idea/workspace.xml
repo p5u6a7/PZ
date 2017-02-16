@@ -2,1059 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00913aa2-7bdd-4ff5-8e46-049e0ad2dca4" name="Default" comment="Dodanie rotacji mapy, skrócenie czasu w route.py">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_0_0_0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_513_679.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_513_680.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_513_681.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_513_682.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_513_683.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_514_679.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_514_680.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_514_681.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_514_682.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_514_683.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_515_679.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_515_680.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_515_681.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_515_682.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_515_683.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_516_679.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_516_680.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_516_681.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_516_682.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_516_683.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_517_679.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_517_680.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_517_681.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_517_682.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_517_683.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_518_680.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_518_681.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_518_682.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_518_683.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_541_654.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_541_655.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_541_656.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_541_657.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_542_654.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_542_655.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_542_656.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_542_657.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_543_654.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_543_655.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_543_656.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_543_657.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_544_654.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_544_655.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_544_656.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_544_657.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_545_654.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_545_655.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_545_656.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_545_657.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_546_654.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_546_655.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_546_656.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_546_657.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_562_689.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_562_690.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_562_691.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_562_692.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_563_688.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_563_689.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_563_690.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_563_691.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_563_692.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_564_688.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_564_689.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_564_690.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_564_691.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_564_692.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_565_688.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_565_689.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_565_690.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_565_691.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_565_692.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_566_688.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_566_689.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_566_690.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_566_691.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_566_692.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_567_688.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_567_689.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_567_690.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_10_567_691.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1023_1025.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1023_1026.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1023_1027.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1024_1025.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1024_1026.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1024_1027.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1025_1025.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1025_1026.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1025_1027.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1026_1025.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1026_1026.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1026_1027.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1030_1362.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1030_1363.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1030_1364.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1030_1365.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1031_1362.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1031_1363.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1031_1364.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1031_1365.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1032_1360.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1032_1361.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1032_1362.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1032_1363.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1032_1364.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1032_1365.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1033_1360.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1033_1361.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1033_1362.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1033_1363.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1033_1364.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1033_1365.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1034_1360.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1034_1361.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1034_1362.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1034_1363.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1034_1364.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1034_1365.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1035_1360.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1035_1361.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1035_1362.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1035_1363.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1036_1360.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1036_1361.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1036_1362.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1036_1363.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1084_1310.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1084_1311.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1084_1312.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1084_1313.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1085_1309.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1085_1310.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1085_1311.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1085_1312.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1085_1313.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1086_1309.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1086_1310.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1086_1311.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1086_1312.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1086_1313.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1087_1309.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1087_1310.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1087_1311.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1087_1312.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1087_1313.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1088_1309.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1088_1310.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1088_1311.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1088_1312.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1088_1313.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1089_1309.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1089_1310.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1089_1311.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1089_1312.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1127_1379.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1127_1380.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1127_1381.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1127_1382.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1128_1379.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1128_1380.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1128_1381.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1128_1382.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1129_1379.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1129_1380.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1129_1381.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1129_1382.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1130_1379.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1130_1380.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1130_1381.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1130_1382.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1131_1379.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1131_1380.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1131_1381.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1131_1382.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1132_1379.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1132_1380.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1132_1381.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_11_1132_1382.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2171_2621.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2171_2622.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2171_2623.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2171_2624.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2172_2621.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2172_2622.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2172_2623.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2172_2624.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2173_2621.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2173_2622.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2173_2623.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2173_2624.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2174_2621.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2174_2622.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2174_2623.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2174_2624.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2175_2621.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2175_2622.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2175_2623.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2175_2624.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2257_2760.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2257_2761.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2257_2762.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2257_2763.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2258_2760.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2258_2761.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2258_2762.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2258_2763.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2259_2760.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2259_2761.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2259_2762.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2259_2763.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2260_2760.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2260_2761.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2260_2762.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2260_2763.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2261_2760.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2261_2761.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2261_2762.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2261_2763.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2262_2760.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2262_2761.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2262_2762.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_12_2262_2763.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4344_5243.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4344_5244.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4344_5245.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4344_5246.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4344_5247.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4345_5243.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4345_5244.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4345_5245.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4345_5246.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4345_5247.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4346_5243.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4346_5244.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4346_5245.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4346_5246.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4346_5247.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4347_5243.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4347_5244.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4347_5245.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4347_5246.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4347_5247.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4348_5243.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4348_5244.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4348_5245.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4348_5246.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4348_5247.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4517_5522.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4517_5523.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4517_5524.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4517_5525.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4518_5522.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4518_5523.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4518_5524.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4518_5525.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4519_5522.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4519_5523.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4519_5524.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4519_5525.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4520_5522.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4520_5523.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4520_5524.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4520_5525.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4521_5522.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4521_5523.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4521_5524.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_13_4521_5525.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8690_10488.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8690_10489.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8690_10490.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8690_10491.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8690_10492.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8691_10488.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8691_10489.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8691_10490.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8691_10491.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8691_10492.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8692_10488.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8692_10489.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8692_10490.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8692_10491.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8692_10492.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8693_10488.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8693_10489.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8693_10490.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8693_10491.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8693_10492.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8694_10488.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8694_10489.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8694_10490.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8694_10491.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8694_10492.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8695_10488.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8695_10489.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8695_10490.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8695_10491.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_8695_10492.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9036_11045.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9036_11046.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9036_11047.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9036_11048.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9036_11049.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9037_11045.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9037_11046.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9037_11047.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9037_11048.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9037_11049.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9038_11045.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9038_11046.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9038_11047.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9038_11048.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9038_11049.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9039_11045.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9039_11046.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9039_11047.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9039_11048.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9039_11049.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9040_11045.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9040_11046.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9040_11047.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9040_11048.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_14_9040_11049.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_16458_21790.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_16458_21791.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_16458_21792.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_16458_21793.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_16459_21790.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_16459_21791.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_16459_21792.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_16459_21793.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_16460_21790.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_16460_21791.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_16460_21792.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_16460_21793.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_16461_21790.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_16461_21791.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_16461_21792.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_16461_21793.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_16462_21790.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_16462_21791.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_16462_21792.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_16462_21793.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18294_22112.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18294_22113.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18294_22114.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18294_22115.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18295_22112.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18295_22113.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18295_22114.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18295_22115.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18296_22112.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18296_22113.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18296_22114.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18296_22115.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18297_22112.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18297_22113.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18297_22114.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18297_22115.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18298_22112.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18298_22113.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18298_22114.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18298_22115.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34768_41959.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34768_41960.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34768_41961.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34768_41962.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34769_41959.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34769_41960.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34769_41961.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34769_41962.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34770_41959.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34770_41960.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34770_41961.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34770_41962.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34771_41959.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34771_41960.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34771_41961.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34771_41962.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34772_41959.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34772_41960.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34772_41961.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34772_41962.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34773_41959.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34773_41960.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34773_41961.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_34773_41962.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69539_83920.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69539_83921.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69539_83922.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69539_83923.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69539_83924.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69540_83920.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69540_83921.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69540_83922.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69540_83923.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69540_83924.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69541_83920.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69541_83921.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69541_83922.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69541_83923.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69541_83924.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69542_83920.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69542_83921.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69542_83922.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69542_83923.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69542_83924.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69543_83920.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69543_83921.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69543_83922.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69543_83923.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69543_83924.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69544_83920.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69544_83921.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69544_83922.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_69544_83923.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278161_335687.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278161_335688.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278162_335687.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278162_335688.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278162_335689.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278162_335690.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278163_335687.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278163_335688.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278163_335689.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278163_335690.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278164_335687.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278164_335688.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278164_335689.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278164_335690.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278165_335687.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278165_335688.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278165_335689.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278165_335690.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278166_335687.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278166_335688.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278166_335689.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278166_335690.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278167_335687.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278167_335688.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278167_335689.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278167_335690.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278171_335690.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278172_335690.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278173_335690.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278174_335688.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278174_335689.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278174_335690.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278175_335687.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278175_335688.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278175_335689.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_19_278175_335690.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_1_0_0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_1_0_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_1_1_0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_1_1_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_2_0_0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_2_0_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_2_0_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_2_0_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_2_1_0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_2_1_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_2_1_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_2_1_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_2_2_0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_2_2_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_2_2_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_2_2_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_2_3_0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_2_3_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_2_3_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_2_3_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_1_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_1_4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_1_5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_1_6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_1_7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_2_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_2_4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_2_5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_2_6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_2_7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_3_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_3_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_3_4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_3_5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_3_6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_3_7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_4_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_4_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_4_4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_4_5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_4_6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_4_7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_5_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_5_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_5_4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_5_5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_5_6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_5_7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_6_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_6_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_6_4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_6_5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_6_6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_6_7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_7_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_7_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_7_4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_7_5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_3_7_6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_10_10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_10_11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_10_12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_10_7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_10_8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_10_9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_11_10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_11_11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_11_12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_11_7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_11_8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_11_9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_12_10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_12_11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_12_12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_12_9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_13_10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_13_11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_13_12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_13_9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_14_10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_14_11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_14_12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_14_9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_15_10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_15_11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_15_12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_15_9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_5_10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_5_11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_5_12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_5_9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_6_10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_6_11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_6_12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_6_7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_6_8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_6_9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_7_10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_7_11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_7_12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_7_7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_7_8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_7_9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_8_10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_8_11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_8_12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_8_7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_8_8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_8_9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_9_10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_9_11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_9_12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_9_7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_9_8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_4_9_9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_14_19.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_14_20.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_14_21.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_14_22.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_14_23.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_15_15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_15_16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_15_17.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_15_19.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_15_20.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_15_21.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_15_22.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_15_23.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_16_15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_16_16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_16_17.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_16_19.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_16_20.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_16_21.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_16_22.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_16_23.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_17_15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_17_16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_17_17.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_17_19.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_17_20.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_17_21.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_17_22.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_17_23.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_18_15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_18_16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_18_17.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_18_19.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_18_20.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_18_21.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_18_22.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_18_23.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_19_19.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_19_20.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_19_21.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_19_22.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_20_19.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_20_20.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_20_21.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_5_20_22.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_30_31.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_30_32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_30_33.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_30_41.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_30_42.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_30_43.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_30_44.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_31_31.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_31_32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_31_33.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_31_39.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_31_40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_31_41.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_31_42.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_31_43.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_31_44.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_32_31.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_32_32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_32_33.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_32_39.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_32_40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_32_41.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_32_42.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_32_43.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_32_44.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_33_31.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_33_32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_33_33.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_33_39.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_33_40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_33_41.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_33_42.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_33_43.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_33_44.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_34_39.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_34_40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_34_41.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_34_42.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_34_43.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_34_44.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_35_39.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_35_40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_35_41.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_35_42.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_35_43.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_35_44.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_36_39.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_36_40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_36_41.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_36_42.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_36_43.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_36_44.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_37_39.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_37_40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_37_41.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_37_42.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_37_43.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_6_37_44.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_62_63.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_62_64.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_62_65.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_62_83.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_62_84.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_62_85.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_62_86.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_62_87.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_63_63.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_63_64.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_63_65.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_63_83.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_63_84.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_63_85.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_63_86.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_63_87.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_64_63.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_64_64.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_64_65.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_64_83.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_64_84.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_64_85.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_64_86.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_64_87.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_65_63.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_65_64.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_65_65.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_65_80.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_65_81.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_65_82.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_65_83.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_65_84.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_65_85.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_65_86.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_65_87.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_66_80.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_66_81.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_66_82.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_66_83.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_66_84.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_66_85.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_66_86.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_66_87.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_67_80.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_67_81.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_67_82.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_67_83.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_67_84.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_67_85.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_67_86.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_68_80.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_68_81.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_68_82.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_68_83.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_69_80.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_69_81.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_69_82.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_69_83.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_69_84.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_69_85.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_69_86.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_69_87.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_70_80.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_70_81.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_70_82.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_70_83.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_70_84.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_70_85.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_70_86.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_70_87.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_71_80.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_71_81.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_71_82.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_71_83.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_71_84.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_71_85.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_71_86.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_71_87.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_72_84.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_72_85.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_72_86.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_72_87.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_73_84.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_73_85.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_73_86.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_7_73_87.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_126_169.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_126_170.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_126_171.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_126_172.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_127_168.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_127_169.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_127_170.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_127_171.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_127_172.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_128_168.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_128_169.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_128_170.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_128_171.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_128_172.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_129_168.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_129_169.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_129_170.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_129_171.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_129_172.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_130_168.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_130_169.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_130_170.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_130_171.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_130_172.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_131_168.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_131_169.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_131_170.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_131_171.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_131_172.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_133_162.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_133_163.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_133_164.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_133_165.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_133_166.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_134_162.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_134_163.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_134_164.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_134_165.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_134_166.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_135_162.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_135_163.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_135_164.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_135_165.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_135_166.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_136_162.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_136_163.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_136_164.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_136_165.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_136_166.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_137_162.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_137_163.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_137_164.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_137_165.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_137_166.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_138_162.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_138_163.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_138_164.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_138_165.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_139_170.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_139_171.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_139_172.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_139_173.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_139_174.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_140_170.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_140_171.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_140_172.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_140_173.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_140_174.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_141_170.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_141_171.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_141_172.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_141_173.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_141_174.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_142_170.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_142_171.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_142_172.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_142_173.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_142_174.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_143_170.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_143_171.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_143_172.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_143_173.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_8_143_174.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_254_255.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_254_256.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_254_257.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_255_255.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_255_256.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_255_257.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_255_339.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_255_340.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_255_341.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_255_342.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_255_343.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_256_255.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_256_256.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_256_257.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_256_339.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_256_340.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_256_341.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_256_342.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_256_343.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_257_255.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_257_256.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_257_257.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_257_339.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_257_340.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_257_341.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_257_342.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_257_343.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_258_339.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_258_340.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_258_341.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_258_342.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_258_343.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_259_339.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_259_340.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_259_341.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_259_342.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_260_339.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_260_340.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_260_341.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_260_342.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_261_339.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_261_340.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_261_341.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_261_342.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_269_326.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_269_327.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_269_328.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_269_329.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_269_330.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_270_326.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_270_327.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_270_328.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_270_329.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_270_330.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_271_326.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_271_327.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_271_328.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_271_329.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_271_330.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_272_326.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_272_327.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_272_328.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_272_329.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_272_330.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_273_326.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_273_327.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_273_328.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_273_329.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_273_330.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_274_326.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_274_327.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_274_328.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_274_329.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_280_343.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_280_344.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_280_345.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_280_346.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_280_347.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_281_343.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_281_344.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_281_345.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_281_346.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_281_347.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_282_343.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_282_344.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_282_345.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_282_346.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_282_347.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_283_343.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_283_344.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_283_345.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_283_346.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_283_347.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_284_343.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_284_344.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_284_345.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_284_346.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_284_347.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_285_343.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_285_344.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_285_345.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_285_346.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_285_347.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_286_343.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_286_344.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_286_345.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_286_346.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_286_347.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_287_344.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_287_345.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_287_346.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_287_347.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_288_344.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_288_345.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_288_346.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_9_288_347.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/libs/garden/garden.mapview/mapview/icons/marker2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/libs/garden/garden.mapview/mapview/icons/meta.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/setuptools-34.0.0.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/setuptools-34.0.0.dist-info/INSTALLER" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/setuptools-34.0.0.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/setuptools-34.0.0.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/setuptools-34.0.0.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/setuptools-34.0.0.dist-info/dependency_links.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/setuptools-34.0.0.dist-info/entry_points.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/setuptools-34.0.0.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/setuptools-34.0.0.dist-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/setuptools-34.0.0.dist-info/zip-safe" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17382_20979.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17382_20979.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17382_20980.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17382_20980.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17382_20981.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17382_20981.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17383_20980.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17383_20980.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17383_20981.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17383_20981.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17383_20982.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17383_20982.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17384_20979.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17384_20979.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17384_20980.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17384_20980.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17384_20981.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17384_20981.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17384_20982.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17384_20982.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17385_20979.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17385_20979.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17385_20980.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17385_20980.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17386_20979.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17386_20979.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17387_20979.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17387_20979.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17387_20980.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17387_20980.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18074_22094.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18074_22094.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18074_22095.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18074_22095.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18074_22096.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18074_22096.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18074_22097.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18074_22097.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18075_22094.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18075_22094.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18075_22095.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18075_22095.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18075_22096.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18075_22096.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18075_22097.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18075_22097.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18076_22094.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18076_22094.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18076_22095.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18076_22095.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18076_22096.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18076_22096.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18076_22097.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18076_22097.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18077_22094.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18077_22094.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18077_22095.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18077_22095.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18077_22096.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18077_22096.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18077_22097.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18077_22097.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18078_22094.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18078_22094.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18078_22095.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18078_22095.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18078_22096.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18078_22096.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18078_22097.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18078_22097.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36151_44189.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36151_44189.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36151_44190.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36151_44190.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36151_44191.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36151_44191.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36151_44192.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36151_44192.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36152_44189.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36152_44189.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36152_44190.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36152_44190.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36152_44191.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36152_44191.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36152_44192.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36152_44192.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36153_44189.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36153_44189.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36153_44190.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36153_44190.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36153_44191.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36153_44191.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36153_44192.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36153_44192.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36154_44189.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36154_44189.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36154_44190.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36154_44190.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36154_44191.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36154_44191.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36154_44192.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36154_44192.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36155_44189.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36155_44189.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36155_44190.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36155_44190.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36155_44191.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36155_44191.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36155_44192.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_16_36155_44192.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72304_88380.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72304_88380.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72304_88381.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72304_88381.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72304_88383.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72304_88383.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72305_88380.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72305_88380.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72305_88381.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72305_88381.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72305_88382.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72305_88382.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72305_88383.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72305_88383.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72306_88380.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72306_88380.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72306_88381.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72306_88381.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72306_88382.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72306_88382.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72306_88383.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72306_88383.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72307_88380.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72307_88380.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72307_88381.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72307_88381.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72307_88382.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72307_88382.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72307_88383.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72307_88383.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72308_88380.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72308_88380.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72308_88381.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72308_88381.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72308_88382.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_17_72308_88382.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_18_139083_167845.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_18_139083_167845.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_18_139084_167845.png" afterPath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_18_139084_167845.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17382_20979.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17382_20980.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17382_20981.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17382_20982.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17383_20979.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17383_20980.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17383_20981.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17383_20982.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17384_20979.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17384_20980.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17384_20981.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17384_20982.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17385_20979.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17385_20980.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17385_20981.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17385_20982.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17386_20979.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17386_20980.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17386_20981.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17386_20982.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17387_20979.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17387_20980.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17387_20981.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_17387_20982.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18074_22094.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18074_22095.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18074_22096.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18074_22097.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18075_22094.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18075_22095.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18075_22096.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18075_22097.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18076_22094.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18076_22095.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18076_22096.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18076_22097.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18077_22094.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18077_22095.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18077_22096.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18077_22097.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18078_22094.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18078_22095.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18078_22096.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.buildozer/android/app/cache/26a7511794_15_18078_22097.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/platform/python-for-android" afterPath="$PROJECT_DIR$/.buildozer/android/platform/python-for-android" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/venv/local/bin" afterPath="$PROJECT_DIR$/.buildozer/venv/local/bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/venv/local/include" afterPath="$PROJECT_DIR$/.buildozer/venv/local/include" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/venv/local/lib" afterPath="$PROJECT_DIR$/.buildozer/venv/local/lib" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/_applibs/futures-3.0.5.dist-info/RECORD" afterPath="$PROJECT_DIR$/.buildozer/android/app/_applibs/futures-3.0.5.dist-info/RECORD" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/_applibs/requests-2.13.0.dist-info/RECORD" afterPath="$PROJECT_DIR$/.buildozer/android/app/_applibs/requests-2.13.0.dist-info/RECORD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/groupscreen.kv" afterPath="$PROJECT_DIR$/.buildozer/android/app/groupscreen.kv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/main.kv" afterPath="$PROJECT_DIR$/.buildozer/android/app/main.kv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/main.py" afterPath="$PROJECT_DIR$/.buildozer/android/app/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/route.py" afterPath="$PROJECT_DIR$/.buildozer/android/app/route.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/android/app/screensettings.kv" afterPath="$PROJECT_DIR$/.buildozer/android/app/screensettings.kv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/applibs/futures-3.0.5.dist-info/RECORD" afterPath="$PROJECT_DIR$/.buildozer/applibs/futures-3.0.5.dist-info/RECORD" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/applibs/requests-2.13.0.dist-info/RECORD" afterPath="$PROJECT_DIR$/.buildozer/applibs/requests-2.13.0.dist-info/RECORD" />
@@ -1070,17 +68,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/venv/bin/python-config" afterPath="$PROJECT_DIR$/.buildozer/venv/bin/python-config" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/venv/bin/wheel" afterPath="$PROJECT_DIR$/.buildozer/venv/bin/wheel" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/pip-9.0.1.dist-info/RECORD" afterPath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/pip-9.0.1.dist-info/RECORD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/pkg_resources/__init__.py" afterPath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/pkg_resources/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/setuptools/command/__init__.py" afterPath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/setuptools/command/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/setuptools/command/develop.py" afterPath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/setuptools/command/develop.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/setuptools/command/egg_info.py" afterPath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/setuptools/command/egg_info.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/setuptools/config.py" afterPath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/setuptools/config.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/setuptools/package_index.py" afterPath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/setuptools/package_index.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/setuptools/py27compat.py" afterPath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/setuptools/py27compat.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/wheel-0.29.0.dist-info/RECORD" afterPath="$PROJECT_DIR$/.buildozer/venv/lib/python2.7/site-packages/wheel-0.29.0.dist-info/RECORD" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildozer/venv/pip-selfcheck.json" afterPath="$PROJECT_DIR$/.buildozer/venv/pip-selfcheck.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.kv" afterPath="$PROJECT_DIR$/main.kv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screensettings.kv" afterPath="$PROJECT_DIR$/screensettings.kv" />
     </list>
     <ignored path="$PROJECT_DIR$/.buildozer/" />
     <ignored path="$PROJECT_DIR$/cache/" />
@@ -1101,23 +95,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="88" column="8" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="buildozer.spec" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/buildozer.spec">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-315">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="18">
+              <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -1126,18 +108,50 @@
       <file leaf-file-name="groupscreen.kv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/groupscreen.kv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
+            <state relative-caret-position="1062">
+              <caret line="59" column="27" lean-forward="true" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="route.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/route.py">
+      <file leaf-file-name="screensettings.kv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/screensettings.kv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+            <state relative-caret-position="594">
+              <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.kv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.kv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../plyer-master/examples/call/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="50" column="35" lean-forward="true" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="callscreen.kv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/callscreen.kv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -1147,7 +161,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>on_loc</find>
       <find>repos</find>
       <find>MapView</find>
       <find>zoom</find>
@@ -1164,6 +177,20 @@
       <find>data</find>
       <find>znacznik</find>
       <find>straznik</find>
+      <find>getOs</find>
+      <find>filename</find>
+      <find>calcu</find>
+      <find>carousel</find>
+      <find>slides[1]</find>
+      <find>slides</find>
+      <find>contac</find>
+      <find>contacts</find>
+      <find>screensettings</find>
+      <find>ScreenSe</find>
+      <find>settings</find>
+      <find>Screen</find>
+      <find>set</find>
+      <find>CONTACTS</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -1178,25 +205,19 @@
         <option value="$PROJECT_DIR$/testy.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/groupscreen.kv" />
+        <option value="$PROJECT_DIR$/tiledata.py" />
+        <option value="$PROJECT_DIR$/screensettings.kv" />
+        <option value="$PROJECT_DIR$/main.kv" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/callscreen.kv" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="188" />
-    <option name="y" value="106" />
-    <option name="width" value="1215" />
-    <option name="height" value="839" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+    <option name="x" value="267" />
+    <option name="y" value="64" />
+    <option name="width" value="1038" />
+    <option name="height" value="704" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -1213,15 +234,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="screen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="screen" />
@@ -1234,10 +248,12 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../plyer-master/examples/call/main.py" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RunManager" selected="Python.main">
@@ -1302,19 +318,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="screen" />
-      <method />
-    </configuration>
-    <configuration default="true" type="ccruntests" factoryName="Run Study Tests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="screen" />
-      <option name="studyTest" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -1456,26 +459,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="188" y="106" width="1215" height="839" extended-state="0" />
+    <frame x="267" y="64" width="1038" height="704" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15604027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32985657" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12235068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32985657" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1502,18 +505,48 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="88" column="8" lean-forward="false" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buildozer.spec">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/groupscreen.kv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="40" column="7" lean-forward="false" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/route.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="53" column="23" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/groupscreen.kv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
-          <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
+          <caret line="40" column="7" lean-forward="false" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1521,7 +554,7 @@
     <entry file="file://$PROJECT_DIR$/route.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
-          <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+          <caret line="53" column="23" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1529,177 +562,157 @@
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+          <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/pyroutelib2/routeAsGpx.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1386">
-          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+          <caret line="67" column="16" lean-forward="false" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1908">
-          <caret line="123" column="24" selection-start-line="123" selection-start-column="24" selection-end-line="123" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+          <caret line="123" column="24" lean-forward="false" selection-start-line="123" selection-start-column="24" selection-end-line="123" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/pyroutelib2/routeAsGpx.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1368">
-          <caret line="77" column="14" selection-start-line="24" selection-start-column="0" selection-end-line="87" selection-end-column="76" />
+          <caret line="77" column="14" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="87" selection-end-column="76" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1908">
-          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="119" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="119" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/pyroutelib2/routeAsGpx.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1368">
-          <caret line="77" column="14" selection-start-line="24" selection-start-column="0" selection-end-line="87" selection-end-column="76" />
+          <caret line="77" column="14" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="87" selection-end-column="76" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/groupscreen.kv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/groupscreen.kv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/groupscreen.kv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+          <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/groupscreen.kv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1709,54 +722,134 @@
     <entry file="file://$PROJECT_DIR$/testy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/pyroutelib2/routeAsGpx.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3">
-          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+          <caret line="48" column="14" lean-forward="false" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routeAsCSV.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-565">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routeAsGpx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-486">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1192970">
+          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buildozer.spec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiledata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="57" column="28" lean-forward="true" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loadOsm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="60" column="45" lean-forward="true" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/route.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+        <state relative-caret-position="563">
+          <caret line="53" column="23" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../plyer-master/examples/call/callinterface">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.kv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screensettings.kv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/groupscreen.kv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
+        <state relative-caret-position="1062">
+          <caret line="59" column="27" lean-forward="true" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/callscreen.kv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../plyer-master/examples/call/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="50" column="35" lean-forward="true" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="88" column="8" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/buildozer.spec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="18">
+          <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
           <folding />
         </state>
       </provider>

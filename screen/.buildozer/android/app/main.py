@@ -10,6 +10,7 @@ from kivy.uix.image import Image
 from kivy.uix.scatter import Scatter
 from kivy.uix.screenmanager import Screen
 from kivy.uix.widget import Widget
+from kivy.uix.button import Button
 from math import atan2, degrees
 from math import radians
 
@@ -23,6 +24,7 @@ from kivy.properties import StringProperty, BooleanProperty, DictProperty
 from kivy.input.motionevent import MotionEvent
 from loadOsm import LoadOsm
 from plyer import gps
+from plyer import call
 from route import Router
 import datetime
 from mapview.utils import clamp
@@ -58,10 +60,21 @@ class ShowTime(Screen):
         show_time = ShowTime()
         self.add_widget(show_time)
 
+    def showCallInterface(self):
+        self.clear_widgets()
+        show_time=ShowTime()
+        self.add_widget(show_time)
+
     def goToScreen(self):
         c = self.carousel
 
         if "screenSettings" in c.current_slide.name:
+            slides = c.current_slide.carousel.slides
+            c.current_slide.carousel.anim_move_duration = 0
+            c.current_slide.carousel.load_slide(slides[1])
+            c.current_slide.carousel.anim_move_duration = 0.5
+
+        if "callScreen" in c.current_slide.name:
             slides = c.current_slide.carousel.slides
             c.current_slide.carousel.anim_move_duration = 0
             c.current_slide.carousel.load_slide(slides[1])
@@ -99,6 +112,10 @@ class GroupScreen(Screen):
                         layer.draw_line()
                         break
 
+class CallScreen(Screen):
+    def build(self):
+        pass
+
 class ScreenSettings(Screen):
     def build(self):
         pass
@@ -128,6 +145,30 @@ class ScreenContacts(Widget):
     pass
 
 
+
+
+'''poczatek'''
+
+class CallInterface(BoxLayout):
+    pass
+
+
+class DialCallButton(Button):
+
+    def dial(self, *args):
+        call.dialcall()
+
+
+class MakeCallButton(Button):
+    tel = StringProperty()
+
+    def call(self, *args):
+        call.makecall(tel=self.tel)
+
+'''koniec'''
+
+
+
 class LineMapLayer(MapLayer):
     id = 'line_map_layer'
     def __init__(self, **kwargs):
@@ -138,7 +179,7 @@ class LineMapLayer(MapLayer):
     '''Funkcja odpowiadajaca za stworzenie wierzcholkow grafu, ktory jest nasza droga'''
 
     def routeToGpx(self, lat1, lon1, lat2, lon2):
-        data = LoadOsm('cycle')
+        data = LoadOsm('car')
         node1 = data.findNode(lat1, lon1)
         node2 = data.findNode(lat2, lon2)
 
@@ -194,6 +235,7 @@ class MainApp(App):
     lon = 18.5946
     Builder.load_file("screensettings.kv")
     Builder.load_file("groupscreen.kv")
+    Builder.load_file("callscreen.kv")
     znacznik = 0
     route_nodes = BooleanProperty(False)
     prev_time = datetime.datetime.now().time()

@@ -1,0 +1,30 @@
+#: import Platform kivy.utils.platform
+<CallScreen>:
+    name: 'callScreen'
+	carousel: carousel
+	height: root.height
+    width: root.width
+	Carousel:
+		name: 'carousel'
+        id: carousel
+        loop: False
+		direction: 'top'
+		ScreenContacts:
+        BoxLayout:
+            orientation: 'vertical'
+            TextInput:
+                size_hint:1,1
+                id: number
+                hint_text: "Wpisz numer"
+                multiline: False
+            MakeCallButton:
+                size_hint:1,1.5
+                tel: number.text
+                text: 'Zadzwoń prosto z aplikacji'
+                on_release: self.call()
+            DialCallButton:
+                size_hint:1,1.5
+                disabled: True if Platform == 'ios' else False
+                text: "Zadzwoń z funkcji telefonu"
+                on_release: self.dial()
+            Label:

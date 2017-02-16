@@ -1,4 +1,4 @@
-#!/home/willow/Pulpit/PZ/screen/.buildozer/venv/bin/python
+#!/home/pawel/Pobrane/Zespolowka2/PZ/screen/.buildozer/venv/bin/python
 
 import sys
 import getopt
