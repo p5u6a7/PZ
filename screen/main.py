@@ -1,34 +1,21 @@
-import math
-from kivy.animation import Animation
+import datetime
 from kivy.app import App
-from kivy.clock import Clock, mainthread
+from kivy.clock import mainthread
 from kivy.graphics import Color, Line
 from kivy.lang import Builder
 from kivy.uix.boxlayout import BoxLayout
-from kivy.uix.carousel import Carousel
-from kivy.uix.image import Image
-from kivy.uix.scatter import Scatter
+from kivy.uix.button import Button
 from kivy.uix.screenmanager import Screen
 from kivy.uix.widget import Widget
-from kivy.uix.button import Button
-from math import atan2, degrees
 from math import radians
 
-from kivy.garden.mapview import MapView, MapMarker, MapLayer
+import requests
+from kivy.garden.mapview import MapLayer
 from kivy.graphics.context_instructions import Translate, Scale
 from kivy.graphics.transformation import Matrix
-from kivy.properties import ListProperty
-from kivy.properties import NumericProperty
-from kivy.properties import ObjectProperty
-from kivy.properties import StringProperty, BooleanProperty, DictProperty
-from kivy.input.motionevent import MotionEvent
-from loadOsm import LoadOsm
-from plyer import gps
+from kivy.properties import StringProperty, BooleanProperty
 from plyer import call
-from route import Router
-import datetime
-from mapview.utils import clamp
-from mapview import MIN_LONGITUDE, MAX_LONGITUDE, MIN_LATITUDE, MAX_LATITUDE
+from plyer import gps
 
 
 class ShowTime(Screen):
@@ -62,7 +49,7 @@ class ShowTime(Screen):
 
     def showCallInterface(self):
         self.clear_widgets()
-        show_time=ShowTime()
+        show_time = ShowTime()
         self.add_widget(show_time)
 
     def goToScreen(self):
@@ -83,6 +70,7 @@ class ShowTime(Screen):
 
 class GroupScreen(Screen):
     auto_center = BooleanProperty(True)
+
     def rotate(self):
         scatter = self.ids["scatter2"]
         r = Matrix().rotate(-radians(30), 0, 0, 1)
@@ -94,7 +82,6 @@ class GroupScreen(Screen):
         self.auto_center = True
         self.redraw_route()
 
-
     def calculate_route_nodes(self, lat1, lon1, lat2, lon2):
         MainApp.cos = -1
 
@@ -102,19 +89,21 @@ class GroupScreen(Screen):
         MainApp.on_location(MainApp.get_running_app())
 
         for layer in MainApp.get_running_app().root.carousel.slides[0].ids["mapView"]._layers:
-                if layer.id == 'line_map_layer':
-                    layer.routeToGpx(lat1, lon1, lat2, lon2)
-                    break
+            if layer.id == 'line_map_layer':
+                layer.routeToGpx(lat1, lon1, lat2, lon2)
+                break
 
     def redraw_route(self):
         for layer in self.ids["mapView"]._layers:
-                    if layer.id == 'line_map_layer':
-                        layer.draw_line()
-                        break
+            if layer.id == 'line_map_layer':
+                layer.draw_line()
+                break
+
 
 class CallScreen(Screen):
     def build(self):
         pass
+
 
 class ScreenSettings(Screen):
     def build(self):
@@ -145,16 +134,14 @@ class ScreenContacts(Widget):
     pass
 
 
-
-
 '''poczatek'''
+
 
 class CallInterface(BoxLayout):
     pass
 
 
 class DialCallButton(Button):
-
     def dial(self, *args):
         call.dialcall()
 
@@ -165,20 +152,62 @@ class MakeCallButton(Button):
     def call(self, *args):
         call.makecall(tel=self.tel)
 
-'''koniec'''
 
+'''koniec'''
 
 
 class LineMapLayer(MapLayer):
     id = 'line_map_layer'
+
     def __init__(self, **kwargs):
         super(LineMapLayer, self).__init__(**kwargs)
         self.zoom = 0
 
-
     '''Funkcja odpowiadajaca za stworzenie wierzcholkow grafu, ktory jest nasza droga'''
 
+    def parseJSON(self, points):
+        response = self.downloadJSON(points)
+        i = response.text.find('"coordinates":')
+        s = ""
+        close_bracket_count = 0
+        for index in xrange(i + 15, len(response.text)):
+            # s.__add__(response.text[index])
+
+            if response.text[index] == "]":
+                if close_bracket_count == 1:
+                    break
+                close_bracket_count += 1
+            else:
+                close_bracket_count = 0
+            s += response.text[index]
+        s = s.encode('utf-8')
+        slist = s.split('],[')
+        slist[0] = slist[0].replace('[', '')
+        slist[len(slist) - 1] = slist[len(slist) - 1].replace(']', '')
+        i = 0
+        a = []
+        for item in slist:
+            a.append(item.split(','))
+            i += 1
+
+        self.count = 0
+        self.parent.node = []
+        for item in a:
+            self.parent.node.append(item)
+            self.count += + 1
+
+    def downloadJSON(self, points):
+        my_url = 'https://api.mapbox.com/directions/v5/mapbox/cycling/' + points + '?access_token=pk.eyJ1Ijoid2lsY3plazUwMyIsImEiOiJjaXowNnAyMjcwMDE4MzNsd2xvbTd5ZnY0In0.WiuRsomVkCrkN1j78JJ7Aw&overview=full&geometries=geojson'
+        response = requests.get(my_url)
+        return response
+
     def routeToGpx(self, lat1, lon1, lat2, lon2):
+        points = str(MainApp.lon) + ',' + str(MainApp.lat) + ';' + str(lon2) + ',' + str(lat2)
+        self.parseJSON(points)
+
+        '''Wersja offline'''
+
+        '''data = LoadOsm('cycle')
         data = LoadOsm('car')
         node1 = data.findNode(lat1, lon1)
         node2 = data.findNode(lat2, lon2)
@@ -190,7 +219,7 @@ class LineMapLayer(MapLayer):
 
         for i in route:
             self.parent.node.append(data.rnodes[i])
-            self.count = self.count + 1
+            self.count = self.count + 1'''
         MainApp.route_nodes = True
 
     '''W momencie przemieszczenia mapy przerysowujemy linie'''
@@ -215,7 +244,8 @@ class LineMapLayer(MapLayer):
         # self.routeToGpx(float(geo_dom[0]), float(geo_dom[1]), float(geo_wydzial[0]), float(geo_wydzial[1]))
 
         for j in xrange(len(self.parent.node) - 1):
-            point_list.extend(mapview.get_window_xy_from(float(self.parent.node[j][0]), float(self.parent.node[j][1]), mapview.zoom))
+            point_list.extend(
+                mapview.get_window_xy_from(float(self.parent.node[j][1]), float(self.parent.node[j][0]), mapview.zoom))
 
         scatter = mapview._scatter
         x, y, s = scatter.x, scatter.y, scatter.scale
@@ -240,7 +270,6 @@ class MainApp(App):
     route_nodes = BooleanProperty(False)
     prev_time = datetime.datetime.now().time()
 
-
     def build(self):
         show_time = ShowTime()
         try:
@@ -258,7 +287,10 @@ class MainApp(App):
 
     @mainthread
     def on_location(self, **kwargs):
-        duration = (datetime.datetime.combine(datetime.date.today(), datetime.datetime.now().time()) - datetime.datetime.combine(datetime.date.today(), MainApp.prev_time)).total_seconds()
+        duration = (
+            datetime.datetime.combine(datetime.date.today(),
+                                      datetime.datetime.now().time()) - datetime.datetime.combine(
+                datetime.date.today(), MainApp.prev_time)).total_seconds()
         if duration >= 1:
             self.gps_location = '\n'.join([
                                               '{}={}'.format(k, v) for k, v in kwargs.items()])
