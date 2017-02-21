@@ -1,0 +1,26 @@
+# Reference contactdb.py
+#: import main contactdb
+#: import ListAdapter kivy.adapters.listadapter.ListAdapter
+#: import ListItemButton kivy.uix.listview.ListItemButton
+ 
+ContactDB:
+ 
+<ContactDB>:
+    orientation: "vertical"
+    contact_list: contacts_list_view
+    padding: 10
+    spacing: 10
+ 
+    BoxLayout:
+        size_hint_y: None
+        height: "40dp"
+        Button:
+            text: "Pokaz kontakty"
+            size_hint_x: 15
+            on_press: root.display_contact()
+ 
+    ListView:
+        id: contacts_list_view
+        adapter:
+            ListAdapter(data=[], cls=main.ContactListButton)
+ 
