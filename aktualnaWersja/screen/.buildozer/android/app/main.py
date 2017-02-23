@@ -80,6 +80,13 @@ class ChooseFile(FloatLayout):
     select = ObjectProperty(None)
     cancel = ObjectProperty(None)
 
+class ChooseNumber(FloatLayout):
+    select = ObjectProperty(None)
+    cancel = ObjectProperty(None)
+
+    def addNumber(bt):
+        self.ids.nrTelefonu.text = bt.text
+
 class MusicPlayer(Screen):
     directory = ''  # lokacja folderu z piosenkami
     nowPlaying = ''  # Aktualnie wybrana piosenka
@@ -354,6 +361,29 @@ class CallScreen(Screen):
     kontakty2 = []
     telefony2 = []
     lista = {}
+
+    def dismiss_popup(self):
+        self._popup.dismiss()
+
+    def numberSelect(self):
+        content = ChooseNumber(select=self.select,
+                             cancel=self.dismiss_popup)
+
+        self._popup = Popup(title="Wybierz numer", content=content,
+                            size_hint=(0.9, 0.9))
+        self._popup.open()
+
+    def select(self, path):
+        # self.directory = path
+        # self.ids.direct.text = self.directory
+        # self.ids.searchBtn.text = "Wybierz folder"
+        # self.savepath(self.directory)
+        # self.songs = []
+        # self.getSongs()
+        self.dismiss_popup()
+
+    # def addNumber(self):
+    #     self.ids.nrTelefonu.text = self.text
 
     def submit_contact(self):
         if platform() == 'android':

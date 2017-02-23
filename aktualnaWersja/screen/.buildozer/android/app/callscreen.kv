@@ -9,7 +9,7 @@
                 pos: self.pos
                 size: self.size
         ScrollView:
-            size_hint: 1, 0.9
+            size_hint: 1, 0.8
             size_x: root.width
             GridLayout:
                 id: scroll
@@ -22,3 +22,93 @@
             size_hint_y: 0.1
             text: "Pokaz kontakty"
             on_release: root.submit_contact()
+        Button:
+            size_hint_y: 0.1
+            text: "Wpisz numer"
+            on_release: root.numberSelect()
+
+<ChooseNumber>:
+    canvas.before:
+        Color:
+            rgba: .4, .4, .4, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    BoxLayout:
+        size: root.size
+        pos: root.pos
+        orientation: "vertical"
+        Label:
+            id: nrTelefonu
+            #size_hint_y: 16.5
+            text: ''
+        BoxLayout:
+            #size_hint_y: .16.5
+            Button:
+                text: "1"
+                background_color: 0,0,0,1
+                on_release: root.addNumber()
+            Button:
+                text: "2"
+                background_color: 0,0,0,1
+                on_release: root.addNumber()
+            Button:
+                text: "3"
+                background_color: 0,0,0,1
+                on_release: root.addNumber()
+        BoxLayout:
+            #size_hint_y: .16.5
+            Button:
+                text: "4"
+                background_color: 0,0,0,1
+                on_release: root.addNumber()
+            Button:
+                text: "5"
+                background_color: 0,0,0,1
+                on_release: root.addNumber()
+            Button:
+                text: "6"
+                background_color: 0,0,0,1
+                on_release: root.addNumber()
+        BoxLayout:
+            #size_hint_y: .16.5
+            Button:
+                text: "7"
+                background_color: 0,0,0,1
+                on_release: root.addNumber()
+            Button:
+                text: "8"
+                background_color: 0,0,0,1
+                on_release: root.addNumber()
+            Button:
+                text: "9"
+                background_color: 0,0,0,1
+                on_release: root.addNumber()
+        BoxLayout:
+            #size_hint_y: .16.5
+            Button:
+                text: "*"
+                background_color: 0,0,0,1
+                on_release: root.addNumber()
+            Button:
+                text: "0"
+                background_color: 0,0,0,1
+                on_release: root.addNumber()
+            Button:
+                text: "#"
+                background_color: 0,0,0,1
+                on_release: root.addNumber()
+        BoxLayout:
+            #size_hint_y: .16.5
+            Button:
+                text: "<"
+                background_color: 0.3,0.3,2,1
+                on_release: root.cancel()
+            Button:
+                text: "Call"
+                background_color: 0.3,2,0.3,1
+                on_release: root.select(filechooser.path)
+            Button:
+                text: "<X="
+                background_color: 2,0.3,0.3,1
+                on_release: root.select(filechooser.path)
