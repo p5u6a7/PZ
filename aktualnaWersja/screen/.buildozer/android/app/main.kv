@@ -1,0 +1,28 @@
+<Screen1>:
+    name: "screen1"
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 50
+        spacing: 50
+        Button:
+            text: "Next (2)"
+            on_release: self.parent.parent.parent.parent.parent.ids.carousel.load_next()
+        Button:
+            text: "Go back (2)"
+            on_release: self.parent.parent.parent.parent.parent.ids.carousel.load_previous()
+
+<Showtime>:
+    orientation: 'vertical'
+    carousel: carousel
+    name: 'showTime'
+    Carousel:
+        on_current_slide: root.goToScreen()
+        height: root.height
+        width: root.width
+		name: 'carousel'
+        id: carousel
+        loop: True
+        GroupScreen:
+		ScreenSettings:
+		CallScreen:
+		MusicPlayer:

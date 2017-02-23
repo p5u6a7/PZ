@@ -1,0 +1,103 @@
+<ScreenSettings>:
+	name: 'screenSettings'
+	carousel: carousel
+	height: root.height
+    width: root.width
+	Carousel:
+		name: 'carousel'
+        id: carousel
+        loop: False
+		direction: 'top'
+		ScreenContacts:
+		BoxLayout:
+		    orientation: 'vertical'
+			Button:
+				text: 'Wyświetlacz'
+				on_release: root.parent.parent.parent.showScreenSettingsDisplay()
+			Button:
+				text: 'Alerty'
+				on_release: root.parent.parent.parent.showScreenSettingsAlerts()
+			Button:
+				text: 'Społeczność'
+				on_release: root.parent.parent.parent.showScreenSettingsSocial()
+			Button:
+				text: 'SMS'
+				on_release: root.parent.parent.parent.showScreenSettingsSMS()
+		ScreenMusic:
+
+
+
+
+<ScreenSettingsDisplay>:
+	name: 'screenSettingsDisplay'
+	BoxLayout:
+		orientation: 'vertical'
+		Button:
+			text: 'Ekran zawsze włączony'
+		Button:
+			text: 'Przygaś ekran gdy nieaktywny'
+		Button:
+			text: 'Powiadomienia na ekranie'
+		Button:
+			text: 'Powrót'
+			on_release: root.parent.showScreenSettings()
+
+<ScreenSettingsAlerts>:
+	name: 'screenSettingsAlerts'
+	BoxLayout:
+		orientation: 'vertical'
+		Button:
+			text: 'Alerty pogodowe'
+		Button:
+			text: 'Alerty do wszystkich z grupy'
+		Button:
+			text: 'Alerty społecznościowe'
+		Button:
+			text: 'Powrót'
+			on_release: root.parent.showScreenSettings()
+
+<ScreenSettingsSocial>:
+	name: 'screenSettingsAlerts'
+	BoxLayout:
+		orientation: 'vertical'
+		Button:
+			text: 'Automatycznie publikuj na facebooku'
+		Button:
+			text: 'Pokaż lokalizację innych'
+		Button:
+			text: 'Pokaż moją lokalizację'
+		Button:
+			text: 'Publikuj moją lokalizację'
+		Button:
+			text: 'Powrót'
+			on_release: root.parent.showScreenSettings()
+
+<ScreenSettingsSMS>:
+	name: 'screenSettingsSMS'
+	BoxLayout:
+		orientation: 'vertical'
+		Button:
+			text: 'Automatyczne odpowiedzi sms'
+		Button:
+			text: 'Ustaw automatyczną odpowiedź sms'
+		Button:
+			text: 'Dodaj odpowiedzi sms'
+		Button:
+			text: 'Powrót'
+			on_release: root.parent.showScreenSettings()
+
+<ScreenMusic>:
+	name: 'screenMusic'
+	BoxLayout:
+		padding: 100
+		spacing: 100
+		Button:
+			text: 'MUSIC'
+
+<ScreenContacts>:
+	name: 'screenContacts'
+	BoxLayout:
+		padding: 100
+		spacing: 100
+		Button:
+			text: 'CONTACTS'

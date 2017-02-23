@@ -1,0 +1,71 @@
+<GroupScreen>:
+    id: groupScreen
+    name: 'groupScreen'
+    orientation: 'horizontal'
+    RelativeLayout:
+        Scatter:
+            height: root.height
+            width: root.width
+            id: scatter2
+            RelativeLayout:
+                height: 3*root.height
+                width: 3*root.width
+                pos: (-root.width, -root.height)
+                MapView:
+                    height: root.height
+                    width: root.width
+                    pos_hint: {'center_x':.5,'center_y':.5}
+                    id: mapView
+                    lat: 45
+                    lon: 11
+                    zoom: 18
+                    node: []
+                    MapMarker:
+                        id: marker
+                        lat: 53.0102
+                        lon: 18.5946
+                    MapMarker:
+                        id: marker2
+    BoxLayout:
+        orientation: 'horizontal'
+        valign: 'bottom'
+        Button:
+            size_hint_y: 0.1
+            size_hint_x: 0.5
+            opacity: 0.5
+            halign: 'left'
+            text: ''
+            text_size: img_alert.size
+            on_release: root.rotate()
+            Image:
+                id: img_alert
+                center_x: self.parent.center_x
+                name: 'alert'
+                source: 'resources/alert.png'
+                height: self.parent.height
+        Button:
+            size_hint_y: 0.1
+            size_hint_x: 0.5
+            opacity: 0.5
+            halign: 'right'
+            text: ''
+            on_release: root.center()
+            Label:
+                id: label1
+                text: "0"
+        Button:
+            size_hint_y: 0.1
+            size_hint_x: 0.5
+            opacity: 0.5
+            halign: 'right'
+            text: ''
+            on_release: root.calculate_route_nodes(53.0102, 18.5946, 52.9828, 18.5729)
+            text_size: img_temp.size
+            Image:
+                id: img_temp
+                center_x: self.parent.center_x
+                source: 'resources/telefon.png'
+                height: self.parent.height
+
+
+
