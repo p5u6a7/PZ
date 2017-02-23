@@ -84,8 +84,62 @@ class ChooseNumber(FloatLayout):
     select = ObjectProperty(None)
     cancel = ObjectProperty(None)
 
-    def addNumber(bt):
-        self.ids.nrTelefonu.text = bt.text
+
+    def addNumber1(self):
+        self.ids.nrTelefonu.text += self.ids.btn1.text
+
+    def addNumber1(self):
+        self.ids.nrTelefonu.text += self.ids.btn1.text
+
+    def addNumber2(self):
+        self.ids.nrTelefonu.text += self.ids.btn2.text
+
+    def addNumber3(self):
+        self.ids.nrTelefonu.text += self.ids.btn3.text
+
+    def addNumber4(self):
+        self.ids.nrTelefonu.text += self.ids.btn4.text
+
+    def addNumber5(self):
+        self.ids.nrTelefonu.text += self.ids.btn5.text
+
+    def addNumber6(self):
+        self.ids.nrTelefonu.text += self.ids.btn6.text
+
+    def addNumber7(self):
+        self.ids.nrTelefonu.text += self.ids.btn7.text
+
+    def addNumber8(self):
+        self.ids.nrTelefonu.text += self.ids.btn8.text
+
+    def addNumber9(self):
+        self.ids.nrTelefonu.text += self.ids.btn9.text
+
+    def addNumber11(self):
+        self.ids.nrTelefonu.text += self.ids.btn11.text
+
+    def addNumber12(self):
+        self.ids.nrTelefonu.text += self.ids.btn12.text
+
+    def addNumber0(self):
+        self.ids.nrTelefonu.text += self.ids.btn0.text
+
+    def delNumber(self):
+        self.ids.nrTelefonu.text = self.ids.nrTelefonu.text[:-1]
+
+    def callPhonePopup(bt):
+        Context = autoclass('android.content.Context')
+        Uri = autoclass('android.net.Uri')
+        Intent = autoclass('android.content.Intent')
+        PythonActivity = autoclass('org.renpy.android.PythonActivity')
+
+        num = "tel:"
+        num = num + bt.ids.nrTelefonu.text
+        intent = Intent(Intent.ACTION_CALL)
+        intent.setData(Uri.parse(num))
+        currentActivity = cast('android.app.Activity', PythonActivity.mActivity)
+        currentActivity.startActivity(intent)
+
 
 class MusicPlayer(Screen):
     directory = ''  # lokacja folderu z piosenkami
@@ -382,8 +436,9 @@ class CallScreen(Screen):
         # self.getSongs()
         self.dismiss_popup()
 
-    # def addNumber(self):
-    #     self.ids.nrTelefonu.text = self.text
+    # def addNum(self):
+    #     def addNumber(bt):
+    #         self.ids.nrTelefonu.text = bt.text
 
     def submit_contact(self):
         if platform() == 'android':

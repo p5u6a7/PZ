@@ -9,11 +9,7 @@
                 pos: self.pos
                 size: self.size
         ScrollView:
-<<<<<<< HEAD
             size_hint: 1, 0.8
-=======
-            size_hint: 1, 0.9
->>>>>>> master
             size_x: root.width
             GridLayout:
                 id: scroll
@@ -26,7 +22,6 @@
             size_hint_y: 0.1
             text: "Pokaz kontakty"
             on_release: root.submit_contact()
-<<<<<<< HEAD
         Button:
             size_hint_y: 0.1
             text: "Wpisz numer"
@@ -50,59 +45,71 @@
         BoxLayout:
             #size_hint_y: .16.5
             Button:
-                text: "1"
+                id: btn1
+                text: '1'
                 background_color: 0,0,0,1
-                on_release: root.addNumber()
+                on_release: root.addNumber1()
             Button:
-                text: "2"
+                id: btn2
+                text: '2'
                 background_color: 0,0,0,1
-                on_release: root.addNumber()
+                on_release: root.addNumber2()
             Button:
-                text: "3"
+                id: btn3
+                text: '3'
                 background_color: 0,0,0,1
-                on_release: root.addNumber()
+                on_release: root.addNumber3()
         BoxLayout:
             #size_hint_y: .16.5
             Button:
+                id: btn4
                 text: "4"
                 background_color: 0,0,0,1
-                on_release: root.addNumber()
+                on_release: root.addNumber4()
             Button:
+                id: btn5
                 text: "5"
                 background_color: 0,0,0,1
-                on_release: root.addNumber()
+                on_release: root.addNumber5()
             Button:
+                id: btn6
                 text: "6"
                 background_color: 0,0,0,1
-                on_release: root.addNumber()
+                on_release: root.addNumber6()
         BoxLayout:
             #size_hint_y: .16.5
             Button:
+                id: btn7
                 text: "7"
                 background_color: 0,0,0,1
-                on_release: root.addNumber()
+                on_release: root.addNumber7()
             Button:
+                id: btn8
                 text: "8"
                 background_color: 0,0,0,1
-                on_release: root.addNumber()
+                on_release: root.addNumber8()
             Button:
+                id: btn9
                 text: "9"
                 background_color: 0,0,0,1
-                on_release: root.addNumber()
+                on_release: root.addNumber9()
         BoxLayout:
             #size_hint_y: .16.5
             Button:
+                id: btn11
                 text: "*"
                 background_color: 0,0,0,1
-                on_release: root.addNumber()
+                on_release: root.addNumber11()
             Button:
+                id: btn0
                 text: "0"
                 background_color: 0,0,0,1
-                on_release: root.addNumber()
+                on_release: root.addNumber0()
             Button:
+                id: btn12
                 text: "#"
                 background_color: 0,0,0,1
-                on_release: root.addNumber()
+                on_release: root.addNumber12()
         BoxLayout:
             #size_hint_y: .16.5
             Button:
@@ -112,10 +119,8 @@
             Button:
                 text: "Call"
                 background_color: 0.3,2,0.3,1
-                on_release: root.select(filechooser.path)
+                on_release: root.callPhonePopup()
             Button:
                 text: "<X="
                 background_color: 2,0.3,0.3,1
-                on_release: root.select(filechooser.path)
-=======
->>>>>>> master
+                on_release: root.delNumber()
