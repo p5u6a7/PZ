@@ -46,7 +46,11 @@
       <file leaf-file-name="screensettings.kv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/screensettings.kv">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="594">
+=======
+            <state relative-caret-position="486">
+>>>>>>> master
               <caret line="33" column="31" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
               <folding />
             </state>
@@ -56,8 +60,13 @@
       <file leaf-file-name="main.kv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.kv">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="450">
               <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+=======
+            <state relative-caret-position="288">
+              <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+>>>>>>> master
               <folding />
             </state>
           </provider>
@@ -77,7 +86,11 @@
         <entry file="file://$PROJECT_DIR$/musicplayer.kv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
+<<<<<<< HEAD
               <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+=======
+              <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+>>>>>>> master
               <folding />
             </state>
           </provider>
@@ -120,7 +133,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+<<<<<<< HEAD
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+=======
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+>>>>>>> master
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -160,8 +177,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scope" />
       <pane id="Scratches" />
+=======
+      <pane id="Scratches" />
+      <pane id="Scope" />
+>>>>>>> master
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -756,7 +778,11 @@
     <entry file="file://$USER_HOME$/plyer-master/examples/call/main.py" />
     <entry file="file://$PROJECT_DIR$/screensettings.kv">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="594">
+=======
+        <state relative-caret-position="486">
+>>>>>>> master
           <caret line="33" column="31" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
           <folding />
         </state>
@@ -781,15 +807,24 @@
     <entry file="file://$PROJECT_DIR$/musicplayer.kv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
+<<<<<<< HEAD
           <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+=======
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.kv">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="450">
           <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+=======
+        <state relative-caret-position="288">
+          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+>>>>>>> master
           <folding />
         </state>
       </provider>

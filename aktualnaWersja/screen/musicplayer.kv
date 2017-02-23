@@ -16,7 +16,11 @@
                     pos: self.pos
                     size: self.size
             pos: 0,root.top-35
+<<<<<<< HEAD
             Label:
+=======
+            TextInput:
+>>>>>>> master
                 id: direct
                 size_hint_x: .7
                 hint_text: 'Lokacja muzyki'
@@ -24,6 +28,7 @@
                 id: searchBtn
                 text: 'Wybierz folder'
                 size_hint_x: .3
+<<<<<<< HEAD
                 background_color: 0.5,0.5,0.5,1
                 on_release: root.onPressSongs()
         Label:
@@ -46,6 +51,11 @@
                 id: status
                 text: ''
                 center: root.center
+=======
+                background_color: 0,0,0,1
+                on_release: root.onPressSongs()
+
+>>>>>>> master
         Label:
             size_hint: 1, 0.01
         BoxLayout:
@@ -84,7 +94,23 @@
                 text: 'Następny'
                 background_color: 0,0,0,1
                 on_press: root.nextSong()
+<<<<<<< HEAD
 
+=======
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: 1.0,.1
+            Button:
+                id: nowplay
+                text: ''
+                size_hint: 1, 0.99
+                background_color: .05,.05,.05,1
+            Label:
+                size_hint: 1, 0.01
+                id: status
+                text: ''
+                center: root.center
+>>>>>>> master
 <ChooseFile>:
     canvas.before:
         Color:

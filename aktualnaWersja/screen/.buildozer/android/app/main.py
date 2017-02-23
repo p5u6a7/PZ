@@ -80,6 +80,7 @@ class ChooseFile(FloatLayout):
     select = ObjectProperty(None)
     cancel = ObjectProperty(None)
 
+<<<<<<< HEAD
 class ChooseNumber(FloatLayout):
     select = ObjectProperty(None)
     cancel = ObjectProperty(None)
@@ -87,6 +88,8 @@ class ChooseNumber(FloatLayout):
     def addNumber(bt):
         self.ids.nrTelefonu.text = bt.text
 
+=======
+>>>>>>> master
 class MusicPlayer(Screen):
     directory = ''  # lokacja folderu z piosenkami
     nowPlaying = ''  # Aktualnie wybrana piosenka
@@ -362,6 +365,7 @@ class CallScreen(Screen):
     telefony2 = []
     lista = {}
 
+<<<<<<< HEAD
     def dismiss_popup(self):
         self._popup.dismiss()
 
@@ -385,6 +389,8 @@ class CallScreen(Screen):
     # def addNumber(self):
     #     self.ids.nrTelefonu.text = self.text
 
+=======
+>>>>>>> master
     def submit_contact(self):
         if platform() == 'android':
             activity = autoclass("org.renpy.android.PythonActivity").mActivity
