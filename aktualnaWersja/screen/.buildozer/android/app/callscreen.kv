@@ -1,0 +1,24 @@
+#: import Platform kivy.utils.platform
+<CallScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        canvas:
+            Color:
+                rgb: .3,.3,.3
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        ScrollView:
+            size_hint: 1, 0.9
+            size_x: root.width
+            GridLayout:
+                id: scroll
+                cols: 1
+                spacing: 10
+                size_hint_y: None
+                row_force_default: True
+                row_default_height: root.height/10
+        Button:
+            size_hint_y: 0.1
+            text: "Pokaz kontakty"
+            on_release: root.submit_contact()
