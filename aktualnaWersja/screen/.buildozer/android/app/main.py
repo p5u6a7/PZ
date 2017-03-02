@@ -26,11 +26,12 @@ from kivy.core.audio import SoundLoader, Sound
 from kivy.properties import ObjectProperty
 from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.popup import Popup
-
+import geocoder
 
 class ShowTime(Screen):
     def build(self):
         pass
+
 
     def showScreenSettingsDisplay(self):
         self.clear_widgets()
@@ -379,6 +380,19 @@ class MusicPlayer(Screen):
 
 class GroupScreen(Screen):
     auto_center = BooleanProperty(True)
+    lonGPS = ''
+    latGPS = ''
+    flagaGPS = False
+
+
+    def Search(self):
+        g = geocoder.google(self.ids.SearchInput.text + ', PL')
+        lonGPS2 = g.lng
+        latGPS2 = g.lat
+        self.lonGPS = str(lonGPS2)
+        self.latGPS = str(latGPS2)
+        #self.ids.SearchInput.text = self.latGPS + ' | ' + self.lonGPS
+        self.flagaGPS = True
 
     def rotate(self):
         scatter = self.ids["scatter2"]
@@ -391,6 +405,10 @@ class GroupScreen(Screen):
         self.auto_center = True
         self.redraw_route()
 
+    def calculate_route_nodes_run(self):
+        self.calculate_route_nodes(self.latGPS, self.lonGPS, self.latGPS, self.lonGPS)
+
+
     def calculate_route_nodes(self, lat1, lon1, lat2, lon2):
         MainApp.cos = -1
 
@@ -401,6 +419,7 @@ class GroupScreen(Screen):
             if layer.id == 'line_map_layer':
                 layer.routeToGpx(lat1, lon1, lat2, lon2)
                 break
+
 
     def redraw_route(self):
         for layer in self.ids["mapView"]._layers:
@@ -730,10 +749,20 @@ class MainApp(App):
                 mapview.add_layer(LineMapLayer(), mode="scatter")
                 MainApp.znacznik = 1
 
+            
+            group = GroupScreen()
+            lat_2 = group.latGPS
+            lon_2 = group.lonGPS
+            flaga_gps = group.flagaGPS
+            print "test_gps"
+            print str(lat_2)
+            print lon_2
+            
             MainApp.get_running_app().root.carousel.slides[0].ids["marker"].lat = float(MainApp.lat)
             MainApp.get_running_app().root.carousel.slides[0].ids["marker"].lon = float(MainApp.lon)
-            MainApp.get_running_app().root.carousel.slides[0].ids["marker2"].lat = 53.0102
-            MainApp.get_running_app().root.carousel.slides[0].ids["marker2"].lon = 18.5946
+            if flaga_gps == True:
+                MainApp.get_running_app().root.carousel.slides[0].ids["marker2"].lat = lat_2
+                MainApp.get_running_app().root.carousel.slides[0].ids["marker2"].lon = lat_2
 
             if MainApp.get_running_app().root.carousel.slides[0].auto_center:
                 mapview.center_on(float(MainApp.lat), (MainApp.lon))

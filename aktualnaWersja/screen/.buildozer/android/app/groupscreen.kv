@@ -1,7 +1,7 @@
 <GroupScreen>:
     id: groupScreen
     name: 'groupScreen'
-    orientation: 'horizontal'
+    orientation: 'vertical'
     RelativeLayout:
         Scatter:
             height: root.height
@@ -27,45 +27,57 @@
                     MapMarker:
                         id: marker2
     BoxLayout:
-        orientation: 'horizontal'
-        valign: 'bottom'
-        Button:
-            size_hint_y: 0.1
-            size_hint_x: 0.5
-            opacity: 0.5
-            halign: 'left'
-            text: ''
-            text_size: img_alert.size
-            on_release: root.rotate()
-            Image:
-                id: img_alert
-                center_x: self.parent.center_x
-                name: 'alert'
-                source: 'resources/alert.png'
-                height: self.parent.height
-        Button:
-            size_hint_y: 0.1
-            size_hint_x: 0.5
-            opacity: 0.5
-            halign: 'right'
-            text: ''
-            on_release: root.center()
-            Label:
-                id: label1
-                text: "0"
-        Button:
-            size_hint_y: 0.1
-            size_hint_x: 0.5
-            opacity: 0.5
-            halign: 'right'
-            text: ''
-            on_release: root.calculate_route_nodes(53.0102, 18.5946, 52.9828, 18.5729)
-            text_size: img_temp.size
-            Image:
-                id: img_temp
-                center_x: self.parent.center_x
-                source: 'resources/telefon.png'
-                height: self.parent.height
+        orientation: 'vertical'
+        size_hint: 1, 0.2
+        BoxLayout:
+            orientation: 'horizontal'
+            valign: 'top'
+            TextInput:
+                id: SearchInput
+                text: ''
+                size_hint_x: 0.8
+            Button:
+                text: "Szukaj"
+                size_hint_x: 0.2
+                on_release: root.Search()
+        BoxLayout:
+            orientation: 'horizontal'
+            valign: 'bottom'
+            Button:
+                size_hint_x: 0.5
+                opacity: 0.5
+                halign: 'left'
+                text: ''
+                text_size: img_alert.size
+                on_release: root.rotate()
+                Image:
+                    id: img_alert
+                    center_x: self.parent.center_x
+                    name: 'alert'
+                    source: 'resources/alert.png'
+                    height: self.parent.height
+            Button:
+                size_hint_x: 0.5
+                opacity: 0.5
+                halign: 'right'
+                text: ''
+                on_release: root.center()
+                Label:
+                    id: label1
+                    text: "0"
+            Button:
+                size_hint_x: 0.5
+                opacity: 0.5
+                halign: 'right'
+                text: ''
+                on_release: root.calculate_route_nodes_run()
+                #on_release: root.calculate_route_nodes(53.0102, 18.5946, 52.9828, 18.5729)
+                text_size: img_temp.size
+                Image:
+                    id: img_temp
+                    center_x: self.parent.center_x
+                    source: 'resources/telefon.png'
+                    height: self.parent.height
 
 
 
