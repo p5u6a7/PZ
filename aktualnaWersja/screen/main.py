@@ -28,9 +28,11 @@ from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.popup import Popup
 import geocoder
 
+
 class ShowTime(Screen):
     def build(self):
         pass
+
 
 
     def showScreenSettingsDisplay(self):
@@ -378,21 +380,39 @@ class MusicPlayer(Screen):
             self.nowPlaying.bind(on_stop=self.stop_event_flaga)
 
 
-class GroupScreen(Screen):
+class GroupScreen(Screen, Widget):
     auto_center = BooleanProperty(True)
     lonGPS = ''
     latGPS = ''
-    flagaGPS = False
+    flagaGPS = 0
+
 
 
     def Search(self):
+        test = self.ids.SearchInput.text
         g = geocoder.google(self.ids.SearchInput.text + ', PL')
-        lonGPS2 = g.lng
-        latGPS2 = g.lat
-        self.lonGPS = str(lonGPS2)
-        self.latGPS = str(latGPS2)
-        #self.ids.SearchInput.text = self.latGPS + ' | ' + self.lonGPS
-        self.flagaGPS = True
+        if test == '':
+            pass
+        else:
+            lonGPS2 = g.lng
+            latGPS2 = g.lat
+            self.lonGPS = str(lonGPS2)
+            self.latGPS = str(latGPS2)
+            self.flagaGPS = 1
+
+    def returnLon(self):
+        self.Search()
+        return self.lonGPS
+
+    def returnLat(self):
+        self.Search()
+        return self.latGPS
+
+    def returnFlag(self):
+        self.Search()
+        return self.flagaGPS
+
+
 
     def rotate(self):
         scatter = self.ids["scatter2"]
@@ -419,7 +439,6 @@ class GroupScreen(Screen):
             if layer.id == 'line_map_layer':
                 layer.routeToGpx(lat1, lon1, lat2, lon2)
                 break
-
 
     def redraw_route(self):
         for layer in self.ids["mapView"]._layers:
@@ -749,18 +768,19 @@ class MainApp(App):
                 mapview.add_layer(LineMapLayer(), mode="scatter")
                 MainApp.znacznik = 1
 
-            
             group = GroupScreen()
-            lat_2 = group.latGPS
+            flaga_gps = group.returnFlag()
+            lat_2 = group.returnLat()
             lon_2 = group.lonGPS
-            flaga_gps = group.flagaGPS
+
             print "test_gps"
-            print str(lat_2)
+            print lat_2
             print lon_2
-            
+            print flaga_gps
+
             MainApp.get_running_app().root.carousel.slides[0].ids["marker"].lat = float(MainApp.lat)
             MainApp.get_running_app().root.carousel.slides[0].ids["marker"].lon = float(MainApp.lon)
-            if flaga_gps == True:
+            if flaga_gps == 1:
                 MainApp.get_running_app().root.carousel.slides[0].ids["marker2"].lat = lat_2
                 MainApp.get_running_app().root.carousel.slides[0].ids["marker2"].lon = lat_2
 

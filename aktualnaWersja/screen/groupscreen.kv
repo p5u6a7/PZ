@@ -28,9 +28,10 @@
                         id: marker2
     BoxLayout:
         orientation: 'vertical'
-        size_hint: 1, 0.2
+        size_hint: 1, 1
         BoxLayout:
             orientation: 'horizontal'
+            size_hint: 1, 0.1
             valign: 'top'
             TextInput:
                 id: SearchInput
@@ -42,6 +43,10 @@
                 on_release: root.Search()
         BoxLayout:
             orientation: 'horizontal'
+            size_hint: 1, 0.8
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint: 1, 0.1
             valign: 'bottom'
             Button:
                 size_hint_x: 0.5
