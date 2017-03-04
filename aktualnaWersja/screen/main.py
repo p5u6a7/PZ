@@ -79,6 +79,8 @@ class ShowTime(Screen):
             c.current_slide.carousel.anim_move_duration = 0
             c.current_slide.carousel.load_slide(slides[1])
             c.current_slide.carousel.anim_move_duration = 0.5
+
+
 class ChooseFile(FloatLayout):
     select = ObjectProperty(None)
     cancel = ObjectProperty(None)
@@ -381,7 +383,7 @@ class MusicPlayer(Screen):
 
 
 class GroupScreen(Screen, Widget):
-    auto_center = BooleanProperty(True)
+    auto_center = BooleanProperty(False)
     lonGPS = ''
     latGPS = ''
     flagaGPS = 0
@@ -425,12 +427,27 @@ class GroupScreen(Screen, Widget):
         self.auto_center = True
         self.redraw_route()
 
+    def centerTarget(self):
+        lon = float(self.returnLon())
+        lat = float(self.returnLat())
+        MainApp.get_running_app().root.carousel.slides[0].ids["mapView"].center_on(lat, lon)
+        #self.auto_center = True
+        self.redraw_route()
+
+    def centerMy(self):
+        lon = float(MainApp.lon)
+        lat = float(MainApp.lat)
+        MainApp.get_running_app().root.carousel.slides[0].ids["mapView"].center_on(lat, lon)
+        #self.auto_center = True
+        self.redraw_route()
+
     def calculate_route_nodes_run(self):
         self.calculate_route_nodes(self.latGPS, self.lonGPS, self.latGPS, self.lonGPS)
 
 
     def calculate_route_nodes(self, lat1, lon1, lat2, lon2):
         MainApp.cos = -1
+        self.center()
 
         '''potrzebne do testowania na komputerze'''
         MainApp.on_location(MainApp.get_running_app())
@@ -710,6 +727,8 @@ class MainApp(App):
     gps_status = StringProperty('Click Start to get GPS location updates')
     lat = 53.0102
     lon = 18.5946
+    flagCenter = True
+    # screensettings.kv tymczasowo zakomentowany w pliku main.kv
     Builder.load_file("screensettings.kv")
     Builder.load_file("groupscreen.kv")
     Builder.load_file("callscreen.kv")
@@ -778,6 +797,7 @@ class MainApp(App):
             print lon_2
             print flaga_gps
 
+
             MainApp.get_running_app().root.carousel.slides[0].ids["marker"].lat = float(MainApp.lat)
             MainApp.get_running_app().root.carousel.slides[0].ids["marker"].lon = float(MainApp.lon)
             if flaga_gps == 1:
@@ -785,8 +805,13 @@ class MainApp(App):
                 MainApp.get_running_app().root.carousel.slides[0].ids["marker2"].lon = lat_2
 
             if MainApp.get_running_app().root.carousel.slides[0].auto_center:
-                mapview.center_on(float(MainApp.lat), (MainApp.lon))
+                mapview.center_on(float(MainApp.lat), float(MainApp.lon))
                 MainApp.get_running_app().root.carousel.slides[0].redraw_route()
+
+            if self.flagCenter == True:
+                mapview.center_on(float(MainApp.lat), float(MainApp.lon))
+                MainApp.get_running_app().root.carousel.slides[0].redraw_route()
+                self.flagCenter = False
             MainApp.cos = 0
             MainApp.prev_time = datetime.datetime.now().time()
 

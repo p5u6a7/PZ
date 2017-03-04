@@ -40,7 +40,7 @@
             Button:
                 text: "Szukaj"
                 size_hint_x: 0.2
-                on_release: root.Search()
+                on_release: root.centerTarget()
         BoxLayout:
             orientation: 'horizontal'
             size_hint: 1, 0.8
@@ -59,14 +59,20 @@
                     id: img_alert
                     center_x: self.parent.center_x
                     name: 'alert'
-                    source: 'resources/alert.png'
+                    source: 'resources/rotation.png'
                     height: self.parent.height
             Button:
                 size_hint_x: 0.5
                 opacity: 0.5
                 halign: 'right'
                 text: ''
-                on_release: root.center()
+                on_release: root.centerMy()
+                Image:
+                    id: img_alert
+                    center_x: self.parent.center_x
+                    name: 'alert'
+                    source: 'resources/center.png'
+                    height: self.parent.height
                 Label:
                     id: label1
                     text: "0"
@@ -81,7 +87,7 @@
                 Image:
                     id: img_temp
                     center_x: self.parent.center_x
-                    source: 'resources/telefon.png'
+                    source: 'resources/route.png'
                     height: self.parent.height
 
 
