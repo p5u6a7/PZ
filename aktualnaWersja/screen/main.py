@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import datetime
 from kivy.app import App
 from kivy.clock import mainthread
@@ -25,15 +27,65 @@ from kivy.clock import Clock
 from kivy.core.audio import SoundLoader, Sound
 from kivy.properties import ObjectProperty
 from kivy.uix.floatlayout import FloatLayout
+from kivy.uix.gridlayout import GridLayout
 from kivy.uix.popup import Popup
+import time
+import threading
+from Contact import Contact
+from Group import Group
 import geocoder
 
 
-class ShowTime(Screen):
-    def build(self):
+AcceptIncomingCall = autoclass("org.test.Phone")
+
+TelephonyManager = autoclass('android.telephony.TelephonyManager')
+Context = autoclass('android.content.Context')
+activity = autoclass("org.renpy.android.PythonActivity").mActivity
+Grupy = autoclass("android.provider.ContactsContract$Groups")
+
+print "asdfg1"
+
+AcceptIncomingCall2 = activity
+
+contacts = []
+groups = []
+
+'''Popup odbieranie telefonu'''
+Builder.load_string('''
+<ConfirmPopup>:
+    cols:1
+    Label:
+        text: root.text
+    GridLayout:
+        cols: 2
+        size_hint_y: None
+        height: '44sp'
+        Button:
+            text: 'Odbierz'
+            on_release: root.dispatch('on_answer','Odbierz')
+        Button:
+            text: 'Odrzuć'
+            on_release: root.dispatch('on_answer', 'Odrzuc')
+''')
+
+
+class ConfirmPopup(GridLayout):
+    text = StringProperty()
+
+    def __init__(self, **kwargs):
+        self.register_event_type('on_answer')
+        super(ConfirmPopup, self).__init__(**kwargs)
+
+    def on_answer(self, *args):
         pass
 
 
+class ShowTime(Screen):
+
+    popup_shown = False
+
+    def build(self):
+        pass
 
     def showScreenSettingsDisplay(self):
         self.clear_widgets()
@@ -80,15 +132,64 @@ class ShowTime(Screen):
             c.current_slide.carousel.load_slide(slides[1])
             c.current_slide.carousel.anim_move_duration = 0.5
 
+    def callListener(self):
+
+        self.popup_shown = False
+        print activity.number
+        if activity.isIncoming or self.popup_shown == False:
+            self.popup_shown = True
+            content = ConfirmPopup()
+            content.bind(on_answer=self._on_answer)
+            self.popup = Popup(title="Dzwoni2" + activity.number,
+                               content=content,
+                               size_hint=(None, None),
+                               size=(480, 400),
+                               auto_dismiss=False)
+            self.popup.open()
+        else:
+            self.popup_shown = False
+        time.sleep(1)
+
+    def check(self):
+
+        '''content = ConfirmPopup(text='Dzwoni ')
+        content.bind(on_answer=self._on_answer)
+        self.popup = Popup(title='Dzwoni ',
+                           content=content,
+                           size_hint=(None, None),
+                           size=(480, 400),
+                           auto_dismiss=False)
+        self.popup.open()'''
+        print"nieWiem"
+        self.callListener()
+
+    def _on_answer(self, instance, answer):
+        print "USER ANSWER: ", repr(answer)
+        if answer == "Odbierz":
+            AcceptIncomingCall2.acceptCall()
+        else:
+            if answer == "Odrzuc":
+                self.rejectIncomingCall()
+        self.popup.dismiss()
+
+    def rejectIncomingCall(self):
+
+        telephonyManager = activity.getSystemService(Context.TELEPHONY_SERVICE)
+        
+        telephonyService = activity.dupa(telephonyManager)
+        telephonyService.endCall()
+
+    #Clock.schedule_interval(callListener, 1)
+
 
 class ChooseFile(FloatLayout):
     select = ObjectProperty(None)
     cancel = ObjectProperty(None)
 
+
 class ChooseNumber(FloatLayout):
     select = ObjectProperty(None)
     cancel = ObjectProperty(None)
-
 
     def addNumber1(self):
         self.ids.nrTelefonu.text += self.ids.btn1.text
@@ -133,7 +234,6 @@ class ChooseNumber(FloatLayout):
         self.ids.nrTelefonu.text = self.ids.nrTelefonu.text[:-1]
 
     def callPhonePopup(bt):
-        Context = autoclass('android.content.Context')
         Uri = autoclass('android.net.Uri')
         Intent = autoclass('android.content.Intent')
         PythonActivity = autoclass('org.renpy.android.PythonActivity')
@@ -152,7 +252,7 @@ class MusicPlayer(Screen):
     songs = []  # Lista utworów
     flaga = 1
 
-    #funkcja wywoływana na przycisku stop/play
+    # funkcja wywoływana na przycisku stop/play
     def stopSong(self):
         self.flaga = 88
         if self.nowPlaying == '':
@@ -199,7 +299,7 @@ class MusicPlayer(Screen):
         if self.flaga == 0:
             self.nowPlaying.bind(on_stop=self.stop_event_flaga)
 
-    #odczytanie ścieżki folderu z pliku
+    # odczytanie ścieżki folderu z pliku
     def getpath(self):
         try:
             f = open("sav.dat", "r")
@@ -210,7 +310,7 @@ class MusicPlayer(Screen):
         except:
             self.ids.direct.text = ''
 
-    #zapisanie ścieżki folderu do pliku
+    # zapisanie ścieżki folderu do pliku
     def savepath(self, path):
         f = open("sav.dat", "w")
         f.write(path)
@@ -244,7 +344,7 @@ class MusicPlayer(Screen):
         # return music
         # self.getSongs()
 
-    #główna funkcja służąca do otwarzania muzyki i tworzenia listy utworów
+    # główna funkcja służąca do otwarzania muzyki i tworzenia listy utworów
     def getSongs(self):
 
         self.directory = self.ids.direct.text  # przypisanie katalogu z etykiety
@@ -257,12 +357,12 @@ class MusicPlayer(Screen):
         if not self.directory.endswith('/'):
             self.directory += '/'
 
-        # Sprawdza czy folder istnieje
-        #if not path.exists(self.directory):
-            #self.ids.status.text = 'Folder nie istnieje'
-            #self.ids.status.color = (1, 0, 0, 1)
+            # Sprawdza czy folder istnieje
+            # if not path.exists(self.directory):
+            # self.ids.status.text = 'Folder nie istnieje'
+            # self.ids.status.color = (1, 0, 0, 1)
 
-        #else:
+            # else:
 
             self.ids.status.text = ''
 
@@ -280,8 +380,7 @@ class MusicPlayer(Screen):
 
             self.songs.sort()
 
-
-        #funkcja uruchamiana w momencie kliknięcia utworu na liście
+        # funkcja uruchamiana w momencie kliknięcia utworu na liście
         def playSong(bt):
             self.flaga = 3
             try:
@@ -297,7 +396,7 @@ class MusicPlayer(Screen):
                     if self.flaga == 4:
                         self.nowPlaying.bind(on_stop=self.stop_event_flaga)
 
-        #tworzenie listy utworów
+        # tworzenie listy utworów
         for song in self.songs:
 
             btn = Button(text=song[:-4], on_press=playSong)
@@ -309,11 +408,11 @@ class MusicPlayer(Screen):
             else:
                 btn.background_color = (.2, .2, .2, 1)
 
-            #dodanie elementów etykiet utworów
+            # dodanie elementów etykiet utworów
             self.ids.scroll.add_widget(icon)
             self.ids.scroll.add_widget(btn)
 
-    #funkcja wywoływana w momencie gdy obecnie odtwarzany utwór się skończy
+    # funkcja wywoływana w momencie gdy obecnie odtwarzany utwór się skończy
     def stop_event_flaga(self, song):
         if self.flaga == 1:
             Clock.schedule_once(partial(self.nextSong2, self.nowPlaying))
@@ -324,7 +423,7 @@ class MusicPlayer(Screen):
         if self.flaga == 6:
             Clock.schedule_once(partial(self.nextSong2, self.nowPlaying))
 
-    #funkcja która odtwarza kolejny utwór z listy
+    # funkcja która odtwarza kolejny utwór z listy
     def nextSong2(self, songfile, dt):
         self.flaga = 1
         dl = len(self.songs)
@@ -382,13 +481,11 @@ class MusicPlayer(Screen):
             self.nowPlaying.bind(on_stop=self.stop_event_flaga)
 
 
-class GroupScreen(Screen, Widget):
+class GroupScreen(Screen):
     auto_center = BooleanProperty(False)
     lonGPS = ''
     latGPS = ''
     flagaGPS = 0
-
-
 
     def Search(self):
         test = self.ids.SearchInput.text
@@ -476,7 +573,7 @@ class CallScreen(Screen):
 
     def numberSelect(self):
         content = ChooseNumber(select=self.select,
-                             cancel=self.dismiss_popup)
+                               cancel=self.dismiss_popup)
 
         self._popup = Popup(title="Wybierz numer", content=content,
                             size_hint=(0.9, 0.9))
@@ -495,11 +592,31 @@ class CallScreen(Screen):
     #     def addNumber(bt):
     #         self.ids.nrTelefonu.text = bt.text
 
+    def read_groups(self):
+        content_resolver = activity.getApplicationContext()
+        resolver = content_resolver.getContentResolver()
+
+        grupa = resolver.query(Grupy.CONTENT_URI, None, None, None, None)
+        group = grupa
+
+        while (grupa.moveToNext()):
+
+            id = group.getString(group.getColumnIndex("_id"))
+            name = group.getString(group.getColumnIndex("TITLE"))
+            if id not in groups:
+                groups.append(Group(id, name))
+        grupa.close()
+
+        for i in groups:
+            print i.id + " " + i.name
+
+
+
     def submit_contact(self):
         if platform() == 'android':
-            activity = autoclass("org.renpy.android.PythonActivity").mActivity
             Phone = autoclass("android.provider.ContactsContract$CommonDataKinds$Phone")
             ContactsContract = autoclass("android.provider.ContactsContract$Contacts")
+            GroupMembership = autoclass("android.provider.ContactsContract$CommonDataKinds$GroupMembership")
 
             ContentResolver = autoclass('android.content.Context')
 
@@ -511,61 +628,60 @@ class CallScreen(Screen):
             # app = ApplicationContext.getApplicationContext()
             Toast = autoclass("android.widget.Toast")
             Cursor = autoclass("android.database.Cursor")
+            Data = autoclass("android.provider.ContactsContract$Data")
             phones = resolver.query(Phone.CONTENT_URI, None, None, None, None)
+            #phones = resolver.query(Data.CONTENT_URI, None, None, None, None)
             pho = phones
-
-            def sortowanie():
-                c = 0
-                for kontakt in self.kontakty:
-                    self.lista[self.kontakty[c]] = self.telefony[c]
-                    c = c + 1
-                    sorted(self.lista)
 
             def callPhone(bt):
                 Context = autoclass('android.content.Context')
                 Uri = autoclass('android.net.Uri')
                 Intent = autoclass('android.content.Intent')
                 PythonActivity = autoclass('org.renpy.android.PythonActivity')
-                b=0
-                tel=''
-                for kontakt in self.kontakty:
-                        if bt.text == self.kontakty2[b]:
-                            tel=self.telefony2[b]
-                        b=b+1
-                b = 0
+                tel = ''
+                for contact in contacts:
+                    if bt.text == contact.display_name:
+                        tel = contact.number
                 num = "tel:"
                 num = num + tel
-                #num = num + bt.text
-                #num = num + "724324231"
+                print "to jest "
+                print num
                 intent = Intent(Intent.ACTION_CALL)
                 intent.setData(Uri.parse(num))
                 currentActivity = cast('android.app.Activity', PythonActivity.mActivity)
                 currentActivity.startActivity(intent)
 
-            n = -1
-            while (phones.moveToNext()):
-                n = n + 1
+            self.read_groups()
 
+            RawContactsColumns = autoclass("android.provider.ContactsContract$RawContactsColumns")
+            projection = [GroupMembership.GROUP_ROW_ID, RawContactsColumns.CONTACT_ID]
+            #projection = [GroupMembership.GROUP_ROW_ID, "contact_id"]
+            Cursor = autoclass("android.database.Cursor")
+            #c = resolver.query(Data.CONTENT_URI, projection, GroupMembership.GROUP_ROW_ID+"="+groups,None, None)
+
+            print "cosik4"
+            while (phones.moveToNext()):
                 name = pho.getString(pho.getColumnIndex("display_name"))
                 phoneNumber = pho.getString(pho.getColumnIndex(Phone.NUMBER))
-                name2 = str(name)
-                phoneNumber2 = str(phoneNumber)
-                #btn = Button(id=phoneNumber2, text=name2, on_release=callPhone)
-                #btn2 = Button(id=phoneNumber2, text=phoneNumber2, on_release=callPhone)
+                contact_group_id = pho.getString(pho.getColumnIndex(GroupMembership.GROUP_ROW_ID))
+                contact_group_name = -1
+                for group in groups:
+                    if contact_group_id == group.id:
+                        contact_group_name = group.name
+                if name == "Adam":
+                    print contact_group_id
+                    print "przerwa"
+
+                current_contact = Contact(str(name), str(phoneNumber), str(contact_group_id), str(contact_group_name))
+                contacts.append(current_contact)
 
                 self.ids.scroll.bind(minimum_height=self.ids.scroll.setter('height'))
 
-                self.kontakty.append(name2)
-                self.kontakty2.append(name2)
-                self.telefony.append(phoneNumber2)
+            contacts.sort(key=lambda contact: contact.display_name)
+            for contact in contacts:
 
-            sortowanie()
-            self.kontakty2.sort()
-            d = 0
-            for kontakt in self.kontakty:
-                self.telefony2.append(self.lista[self.kontakty2[d]])
-                btn = Button(text=self.kontakty2[d], on_release=callPhone)
-                d = d + 1
+                btn = Button(text=contact.display_name, on_release=callPhone)
+                #btn = Button(text=contact.display_name + "  " + contact.group_id, on_release=callPhone)
                 self.ids.scroll.add_widget(btn)
 
 
@@ -720,7 +836,56 @@ class LineMapLayer(MapLayer):
             Translate(-x, -y)
             Color(0, 0, 255, .6)
             Line(points=point_list, width=3, joint="bevel")
+            
+            
+class ZoneList():
 
+    _zoneL = []
+
+    if platform() == 'android':
+        activity = autoclass("org.renpy.android.PythonActivity").mActivity
+        Grupy = autoclass("android.provider.ContactsContract$Groups")
+        content_resolver = activity.getApplicationContext()
+        resolver = content_resolver.getContentResolver()
+
+        grupa = resolver.query(Grupy.CONTENT_URI, None, None, None, None)
+        group = grupa
+
+        while (grupa.moveToNext()):
+
+            g = group.getString(group.getColumnIndex("TITLE"))
+            if g not in _zoneL:
+                _zoneL.append(g)
+        grupa.close()
+
+
+class ZoneElements(GridLayout):
+    pass
+
+
+class ZoneCheckBoxes(GridLayout):
+    _instance_count = -1
+    _zoneNames = ZoneList._zoneL
+
+    def __init__(self, **kwargs):
+        super(ZoneCheckBoxes, self).__init__(**kwargs)
+        ZoneCheckBoxes._instance_count += 1
+    
+
+class ZoneButton(Button):
+    _instance_count = -1
+    _zoneNames = ZoneList._zoneL
+    
+    def __init__(self, **kwargs):
+        super(ZoneButton, self).__init__(**kwargs)
+        ZoneButton._instance_count += 1
+
+
+class ZoneLayout(BoxLayout):
+    def __init__(self, **kwargs):
+        super(ZoneLayout, self).__init__(**kwargs)
+        for i in range(len(ZoneList._zoneL)):
+            self.add_widget(ZoneElements())
 
 class MainApp(App):
     gps_location = StringProperty()
@@ -733,6 +898,7 @@ class MainApp(App):
     Builder.load_file("groupscreen.kv")
     Builder.load_file("callscreen.kv")
     Builder.load_file("musicplayer.kv")
+    Builder.load_file("grupy.kv")
     znacznik = 0
     route_nodes = BooleanProperty(False)
     prev_time = datetime.datetime.now().time()

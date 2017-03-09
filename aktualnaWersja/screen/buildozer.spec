@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = My Application
+title = NowaAplikacjaTest
 
 # (str) Package name
-package.name = myapp
+package.name = NowyProjektTest
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.test
@@ -72,25 +72,25 @@ orientation = portrait
 fullscreen = 1
 
 # (list) Permissions
-android.permissions = INTERNET,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION,READ_CONTACTS,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION,READ_PHONE_STATE,MODIFY_PHONE_STATE,CALL_PHONE
+android.permissions = INTERNET,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION,READ_CONTACTS,READ_PHONE_STATE,MODIFY_PHONE_STATE,CALL_PHONE,RECEIVE_SMS,READ_SMS
 
 # (int) Android API to use
-#android.api = 19
+android.api = 23
 
 # (int) Minimum API required
 #android.minapi = 9
 
 # (int) Android SDK version to use
-#android.sdk = 20
+android.sdk = 23
 
 # (str) Android NDK version to use
-#android.ndk = 9c
+#android.ndk = 14
 
 # (bool) Use --private data storage (True) or --dir public storage (False)
 #android.private_storage = True
 
 # (str) Android NDK directory (if empty, it will be automatically downloaded.)
-#android.ndk_path =
+#android.ndk_path = /home/willow/.buildozer/android/platform/android-ndk-r14
 
 # (str) Android SDK directory (if empty, it will be automatically downloaded.)
 #android.sdk_path =
@@ -117,10 +117,12 @@ android.permissions = INTERNET,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION,READ_
 # down the build process. Allows wildcards matching, for example:
 # OUYA-ODK/libs/*.jar
 #android.add_jars = foo.jar,bar.jar,path/to/more/*.jar
+#android.add_jars = libs/support-v4-19.1.0.jar
+#android.add_jars = libs/support-v4-24.1.1.aar
 
 # (list) List of Java files to add to the android project (can be java or a
 # directory containing the files)
-#android.add_src =
+android.add_src = org,com
 
 # (str) python-for-android branch to use, if not master, useful to try
 # not yet merged features.

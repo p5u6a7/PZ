@@ -66,16 +66,30 @@
                 opacity: 0.5
                 halign: 'right'
                 text: ''
+                #on_release: root.centerMy()
+                on_release: root.parent.parent.parent.check()
+                Image:
+                    id: img_alert
+                    center_x: self.parent.center_x
+                    name: 'alert'
+                    source: 'resources/telefon.png'
+                    height: self.parent.height
+                Label:
+                    id: label1
+                    text: "0"
+            Button:
+                size_hint_x: 0.5
+                opacity: 0.5
+                halign: 'right'
+                text: ''
                 on_release: root.centerMy()
+                #on_release: root.parent.parent.parent.check()
                 Image:
                     id: img_alert
                     center_x: self.parent.center_x
                     name: 'alert'
                     source: 'resources/center.png'
                     height: self.parent.height
-                Label:
-                    id: label1
-                    text: "0"
             Button:
                 size_hint_x: 0.5
                 opacity: 0.5

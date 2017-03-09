@@ -15,8 +15,9 @@ from kivy.uix.screenmanager import Screen, ScreenManager
 from functools import partial
 from os import listdir, path
 from kivy.clock import Clock
+import os
 
-
+print "aaa1bbb"
 class ChooseFile(FloatLayout):
     select = ObjectProperty(None)
     cancel = ObjectProperty(None)
@@ -26,6 +27,7 @@ class MusicPlayer(Screen):
     directory = ''  # lokacja folderu z piosenkami
     nowPlaying = ''  # Aktualnie wybrana piosenka
     songs = []  # Lista utworów
+    songs2 = []  # Lista utworów
     flaga = 1
 
     #funkcja wywoływana na przycisku stop/play
@@ -145,9 +147,16 @@ class MusicPlayer(Screen):
             self.ids.scroll.bind(minimum_height=self.ids.scroll.setter('height'))
 
             # get mp3 files from directory
-            for fil in listdir(self.directory):
-                if fil.endswith('.mp3'):
-                    self.songs.append(fil)
+            for root, dirs, files in os.walk('/storage'):
+                for f in files:
+                    filename = os.path.join(root, f)
+                    if filename.endswith('.mp3'):
+                        self.songs.append(filename)
+                        self.songs2.append(f)
+                        print f
+            #for fil in listdir(self.directory):
+                #if fil.endswith('.mp3'):
+                    #self.songs.append(fil)
 
             # Jeśli nie znaleziono plików mp3 w wybranym katalogu
             if self.songs == [] and self.directory != '':
@@ -174,13 +183,13 @@ class MusicPlayer(Screen):
                         self.nowPlaying.bind(on_stop=self.stop_event_flaga)
 
         #tworzenie listy utworów
-        for song in self.songs:
+        for song in self.songs2:
 
             btn = Button(text=song[:-4], on_press=playSong)
             icon = Button(size_hint_x=None, size_hint_y=None, background_down="ico.png", background_normal="ico.png")
 
             # kolorowanie elementów listy
-            if self.songs.index(song) % 2 == 0:
+            if self.songs2.index(song) % 2 == 0:
                 btn.background_color = (.1, .1, .1, 1)
             else:
                 btn.background_color = (.2, .2, .2, 1)

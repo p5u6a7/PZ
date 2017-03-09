@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/daniel/prohejtGlowny/PZ-master/screen/.buildozer/venv"
+VIRTUAL_ENV="/home/daniel/Pulpit/screen/.buildozer/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
