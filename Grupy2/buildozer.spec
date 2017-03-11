@@ -1,7 +1,7 @@
 [app]
 
 # (str) Title of your application
-title = GrupyDanych
+title = Grupy
 
 # (str) Package name
 package.name = Grupyexample
