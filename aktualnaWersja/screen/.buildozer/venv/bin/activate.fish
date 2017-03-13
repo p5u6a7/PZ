@@ -36,7 +36,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/daniel/Pulpit/screen/.buildozer/venv"
+set -gx VIRTUAL_ENV "/home/willow/Pulpit/temp/PZ/aktualnaWersja/screen/.buildozer/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

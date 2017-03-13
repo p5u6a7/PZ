@@ -78,6 +78,16 @@
     <activity android:name="org.test.AcceptCallActivity">
     </activity>
 
+    <service android:name="org.test.NotificationReceiverService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+        android:enabled="true" android:exported="true">
+        <intent-filter>
+            <action android:name="android.service.notification.NotificationListenerService" />
+        </intent-filter>
+    </service>
+    <intent-filter>
+         <action android:name="android.service.notification.NotificationListenerService" />
+    </intent-filter>
+
     {% if service or args.launcher %}
     <service android:name="org.renpy.android.PythonService"
              android:process=":PythonService"/>
@@ -107,6 +117,8 @@
   {% endif %}
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+  <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"/>
+  <uses-permission android:name="android.permission.SEND_SMS"/>
 
   {% for perm in args.permissions %}
   {% if '.' in perm %}

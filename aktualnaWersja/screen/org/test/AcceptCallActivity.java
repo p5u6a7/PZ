@@ -112,7 +112,10 @@ public class AcceptCallActivity extends Activity {
                 broadcastHeadsetConnected(false);
             }
         }
-        finish();
+        
+        //Nie jestem pewien czy ma byc zakomentowane czy nie
+        
+        //finish();
 
     }
 

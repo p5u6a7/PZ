@@ -1,12 +1,12 @@
 <ZoneLayout>:
     id: zoneLayout
     name: 'zoneLayout'
-    orientation: 'vertical'  
+    orientation: 'vertical'
 
-    GridLayout:
+	GridLayout:
 		cols: 4
-        size_hint: 1, .5   
-        pos_hint: {'x': 0, 'y': 0}              
+        size_hint: 1, .5
+        pos_hint: {'x': 0, 'y': 0}
 
         Label:
 			size_hint: 0.25,0.1
@@ -15,7 +15,7 @@
 			font_size: '12sp'
 			halign: 'center'
 			valign: 'middle'
-			
+
 		Label:
 			size_hint: 0.2,0.1
 			text: 'Autoodebranie'
@@ -23,7 +23,7 @@
 			font_size: '12sp'
 			halign: 'center'
 			valign: 'middle'
-		
+
 		Label:
 			size_hint: 0.2,0.1
 			text: 'Odrzucenie z powiadomieniem SMS'
@@ -31,7 +31,7 @@
 			font_size: '12sp'
 			halign: 'center'
 			valign: 'middle'
-		
+
 		Label:
 			size_hint: 0.2,0.1
     		text: 'Odrzucenie'
@@ -39,33 +39,38 @@
 			font_size: '12sp'
 			halign: 'center'
 			valign: 'middle'
-		
-  
+
+
 
 <ZoneButton>:
     text: root._zoneNames[root._instance_count]
 	text_size: self.size
 	halign: 'center'
 	valign: 'middle'
-	
+
 
 <ZoneCheckBoxes>:
 	cols:3
 
     CheckBox:
+		id: autood
 		size_hint: 0.5,.01
+		active: root.autood
         group: "Zone " + root._zoneNames[root._instance_count]
-        
+        on_active: root.autoodebranie(self.group)
     CheckBox:
+		id: odrzSMS
 		size_hint: 0.5,.01
+		active: root.odrzSMS
         group: "Zone " + root._zoneNames[root._instance_count]
-    
+    	on_active: root.odrzucenieSMS(self.group)
 	CheckBox:
+		id: odrz
 		size_hint: 0.5,.01
-		active: True
+		active: root.odrz
         group: "Zone " + root._zoneNames[root._instance_count]
-	
-	
+		on_active: root.odrzucenie(self.group)
+
 <ZoneElements>:
     cols: 2
     ZoneButton:
@@ -73,21 +78,17 @@
     ZoneCheckBoxes:
 	Label:
         size_hint: 0.5,.01
-        canvas.before: 
-            Color: 
+        canvas.before:
+            Color:
                 rgb: .5,.5,10
-            Rectangle: 
+            Rectangle:
                 pos: self.pos
                 size: self.size
     Label:
         size_hint: 2.5,.01
-        canvas.before: 
-            Color: 
-                rgb: .5,.15,0 
-            Rectangle: 
+        canvas.before:
+            Color:
+                rgb: .5,.15,0
+            Rectangle:
                 pos: self.pos
                 size: self.size
-
-
-
-

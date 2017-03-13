@@ -64,6 +64,15 @@ import android.provider.ContactsContract.PhoneLookup;
 import android.provider.ContactsContract;
 import android.content.IntentFilter;
 import android.R;
+import android.annotation.TargetApi;
+import android.widget.MediaController;
+//import org.test.NotificationReceiverService;
+import android.media.session.MediaSessionManager;
+import android.content.ComponentName;
+import android.provider.ContactsContract.*;
+import android.provider.ContactsContract.CommonDataKinds.Phone;
+import android.content.ContentResolver;
+import java.util.HashMap;
 
 
 public class PythonActivity extends Activity implements Runnable {
@@ -96,11 +105,33 @@ public class PythonActivity extends Activity implements Runnable {
     public String number = "";
 
     public boolean isIncoming = false;
+    public int callState = -1;
 
 
+    
 
 
+    /*@TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    public void sendHeadsetHookLollipop() {
+        MediaSessionManager mediaSessionManager =  (MediaSessionManager) getApplicationContext().getSystemService(Context.MEDIA_SESSION_SERVICE);
 
+        try {
+            System.out.println("przerwa");
+            List<android.media.session.MediaController> mediaControllerList = (List<android.media.session.MediaController>)(mediaSessionManager.getActiveSessions
+                         (new ComponentName(this.getApplicationContext(), NotificationReceiverService.class)));
+
+
+            for (android.media.session.MediaController m : mediaControllerList) {
+                 if ("com.android.server.telecom".equals(m.getPackageName())) {
+                     m.dispatchMediaButtonEvent(new KeyEvent(KeyEvent.ACTION_UP, KeyEvent.KEYCODE_HEADSETHOOK));
+                     System.out.println("HEADSETHOOK sent to telecom server");
+                     break;
+                 }
+            }
+        } catch (SecurityException e) {
+            System.out.println("Permission error. Access to notification not granted to the app.");
+        }
+    }*/
 
 
 
@@ -197,12 +228,13 @@ private final int CHECK_CODE = 0x1;
            if (state == TelephonyManager.CALL_STATE_RINGING) {
                String phoneNumber =   incomingNumber;
                number = incomingNumber;
-               System.out.println("wpizdu" + number);
                isIncoming = true;
+               callState = state;
            }
            else{
                number = "";
                isIncoming = false;
+               callState = state;
            }
        }
     }
@@ -212,10 +244,9 @@ private final int CHECK_CODE = 0x1;
     private MyPhoneStateListener phoneStateListener = null;
 
 
-    public ITelephony dupa(TelephonyManager tm){
+    public ITelephony createITelephonyInstance(TelephonyManager tm){
         Method metoda = null;
         ITelephony ts = null;
-        System.out.println("MojaMetoda");
         try{
             metoda = tm.getClass().getDeclaredMethod("getITelephony");
             metoda.setAccessible(true);
@@ -224,9 +255,6 @@ private final int CHECK_CODE = 0x1;
         catch(Exception e){
             System.out.println(e);
         }
-        System.out.println("MojaMetoda1");
-        System.out.println(metoda);
-        System.out.println("MojaMetoda2");
         return ts;
     }
 
@@ -316,7 +344,7 @@ private final int CHECK_CODE = 0x1;
 
 
     private void requestSmsPermission() {
-    String permission = Manifest.permission.MODIFY_PHONE_STATE;
+    String permission = Manifest.permission.RECEIVE_SMS;
     int grant = checkSelfPermission((Context)this, permission);
     if ( grant != PackageManager.PERMISSION_GRANTED) {
         String[] permission_list = new String[1];
@@ -961,3 +989,4 @@ private final int CHECK_CODE = 0x1;
     }
 
 }
+

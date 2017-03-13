@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = NowaAplikacjaTest
+title = abAplikacja
 
 # (str) Package name
-package.name = NowyProjektTest
+package.name = abProjekt
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.test
@@ -36,7 +36,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma seperated e.g. requirements = sqlite3,kivy
-requirements = kivy,futures,openssl,requests,plyer,osmapi,pyjnius,geocoder
+requirements = kivy,futures,openssl,requests,plyer,osmapi,pyjnius,geocoder,sqlite3
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -72,7 +72,7 @@ orientation = portrait
 fullscreen = 1
 
 # (list) Permissions
-android.permissions = INTERNET,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION,READ_CONTACTS,READ_PHONE_STATE,MODIFY_PHONE_STATE,CALL_PHONE,RECEIVE_SMS,READ_SMS
+android.permissions = INTERNET,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION,READ_CONTACTS,READ_PHONE_STATE,MODIFY_PHONE_STATE,CALL_PHONE,RECEIVE_SMS,READ_SMS,SEND_SMS
 
 # (int) Android API to use
 android.api = 23
