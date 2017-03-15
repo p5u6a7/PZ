@@ -1,0 +1,86 @@
+ZoneLayout:
+
+
+<ZoneLayout>:
+	id: zoneLayout
+    name: 'zoneLayout'
+    orientation: 'vertical'  
+
+	GridLayout:
+		cols: 4
+        size_hint: 1, .5   
+        pos_hint: {'x': 0, 'y': 0}              
+
+        Label:
+			size_hint: 0.3,0.1
+            text: 'Nazwa Grupy'
+			text_size: self.size
+			font_size: '12sp'
+			halign: 'center'
+			valign: 'middle'
+		
+		Label:
+			size_hint: 0.35,0.1
+    		text: 'Odrzucenie'
+			text_size: self.size
+			font_size: '12sp'
+			halign: 'center'
+			valign: 'middle'
+
+		Label:
+			size_hint: 0.35,0.1
+			text: 'Decyzja w trakcie połączenia'
+			text_size: self.size
+			font_size: '12sp'
+			halign: 'center'
+			valign: 'middle'
+		
+  
+
+<ZoneButton>:
+    text: root._zoneNames[root._instance_count]
+	text_size: self.size
+	halign: 'center'
+	valign: 'middle'
+	
+
+<ZoneCheckBoxes>:
+	cols:2
+
+	CheckBox:
+		size_hint: 0.5,.01
+		active: root.odrz
+        group: "Zone " + root._zoneNames[root._instance_count]
+		on_active: root.odrzucenie(self.group)
+
+	CheckBox:
+		size_hint: 0.5,.01
+		active: root.decy
+        group: "Zone " + root._zoneNames[root._instance_count]
+        on_active: root.decyzja(self.group)
+	
+<ZoneElements>:
+    cols: 2
+    ZoneButton:
+
+    ZoneCheckBoxes:
+	Label:
+        size_hint: 0.5,.01
+        canvas.before: 
+            Color: 
+                rgb: .5,.5,10
+            Rectangle: 
+                pos: self.pos
+                size: self.size
+    Label:
+        size_hint: 2.5,.01
+        canvas.before: 
+            Color: 
+                rgb: .5,.15,0 
+            Rectangle: 
+                pos: self.pos
+                size: self.size
+
+
+
+
