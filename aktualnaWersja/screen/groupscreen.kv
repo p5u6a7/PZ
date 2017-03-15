@@ -12,6 +12,14 @@
                 width: 3*root.width
                 pos: (-root.width, -root.height)
                 MapView:
+                    canvas.before:
+                        PushMatrix
+                        Rotate:
+                            angle: app.needle_angle
+                            axis: 0, 0, 1
+                            origin: self.center
+                    canvas.after:
+                        PopMatrix
                     height: root.height
                     width: root.width
                     pos_hint: {'center_x':.5,'center_y':.5}
@@ -54,7 +62,7 @@
                 halign: 'left'
                 text: ''
                 text_size: img_alert.size
-                on_release: root.rotate()
+                on_release: root.get_readings(1)
                 Image:
                     id: img_alert
                     center_x: self.parent.center_x
@@ -66,7 +74,7 @@
                 opacity: 0.5
                 halign: 'right'
                 text: ''
-                #on_release: root.centerMy()
+                #on_release: root.send_sms()
                 on_release: root.parent.parent.parent.check()
                 Image:
                     id: img_alert
@@ -82,8 +90,8 @@
                 opacity: 0.5
                 halign: 'right'
                 text: ''
-                #on_release: root.centerMy()
-                on_release: root.parent.parent.parent.check("881689020", "Testowy SMS")
+                on_release: root.centerMy()
+                #on_release: root.parent.parent.parent.check()
                 Image:
                     id: img_alert
                     center_x: self.parent.center_x
